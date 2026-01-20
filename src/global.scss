@@ -43,11 +43,18 @@ body {
 
 ion-content {
   --background: var(--app-bg);
+  --color: var(--app-text);
 }
 
 ion-toolbar {
   --background: var(--app-surface);
   --color: var(--app-text);
+}
+
+.toolbar-title,
+.toolbar-title-default,
+.toolbar-title-large {
+  color: var(--app-text);
 }
 
 ion-card {
@@ -58,6 +65,37 @@ ion-card {
 
 ion-item {
   --background: var(--app-surface);
+  --color: var(--app-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ion-label,
+ion-title {
+  color: var(--app-text);
+}
+
+ion-card-title,
+ion-card-subtitle {
+  color: var(--app-text);
+}
+
+ion-card-subtitle {
+  opacity: 0.7;
+}
+
+ion-segment-button {
+  --color: var(--app-text-muted);
+  --color-checked: var(--app-text);
+  --indicator-color: var(--ion-color-primary);
+}
+
+ion-accordion ion-item {
   --color: var(--app-text);
 }
 

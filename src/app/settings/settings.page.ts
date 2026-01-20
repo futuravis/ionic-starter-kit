@@ -22,7 +22,8 @@ export class SettingsPage implements OnInit {
     this.applyTheme(this.themeMode);
   }
 
-  onThemeChange(mode: string): void {
+  onThemeChange(event: CustomEvent): void {
+    const mode = (event.detail?.value ?? 'system') as string;
     this.themeMode = mode;
     localStorage.setItem(this.themeStorageKey, mode);
     this.applyTheme(mode);
@@ -30,17 +31,21 @@ export class SettingsPage implements OnInit {
 
   private applyTheme(mode: string): void {
     const root = document.documentElement;
+    const body = document.body;
 
     if (mode === 'dark') {
       root.setAttribute('data-theme', 'dark');
+      body.setAttribute('data-theme', 'dark');
       return;
     }
 
     if (mode === 'light') {
       root.setAttribute('data-theme', 'light');
+      body.setAttribute('data-theme', 'light');
       return;
     }
 
     root.removeAttribute('data-theme');
+    body.removeAttribute('data-theme');
   }
 }
