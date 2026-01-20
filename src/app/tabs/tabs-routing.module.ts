@@ -40,6 +40,10 @@ const routes: Routes = [
         loadChildren: () => import('../ui-collapsible-header/ui-collapsible-header.module').then(m => m.UiCollapsibleHeaderPageModule)
       },
       {
+        path: 'ui-navigation',
+        loadChildren: () => import('../ui-navigation/ui-navigation.module').then(m => m.UiNavigationPageModule)
+      },
+      {
         path: 'ui-buttons',
         loadChildren: () => import('../ui-buttons/ui-buttons.module').then(m => m.UiButtonsPageModule)
       },

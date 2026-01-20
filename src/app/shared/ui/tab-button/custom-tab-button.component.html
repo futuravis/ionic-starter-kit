@@ -1,0 +1,11 @@
+<ion-tab-button
+  [tab]="tab"
+  [href]="href"
+  [layout]="layout"
+  [disabled]="disabled"
+  [class]="tabButtonClass"
+>
+  <ion-icon *ngIf="icon" aria-hidden="true" [name]="icon"></ion-icon>
+  <custom-label *ngIf="label" variant="body">{{ label }}</custom-label>
+  <ng-content></ng-content>
+</ion-tab-button>

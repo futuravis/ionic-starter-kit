@@ -3,7 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { CustomAvatarComponent } from './avatar/custom-avatar.component';
+import { CustomBackButtonComponent } from './back-button/custom-back-button.component';
 import { CustomBadgeComponent } from './badge/custom-badge.component';
+import { CustomBreadcrumbComponent } from './breadcrumb/custom-breadcrumb.component';
+import { CustomBreadcrumbsComponent } from './breadcrumbs/custom-breadcrumbs.component';
 import { CustomButtonClearComponent } from './button/custom-button-clear.component';
 import { CustomButtonComponent } from './button/custom-button.component';
 import { CustomButtonOutlineComponent } from './button/custom-button-outline.component';
@@ -21,6 +24,9 @@ import { CustomSearchbarComponent } from './searchbar/custom-searchbar.component
 import { CustomSegmentComponent } from './segment/custom-segment.component';
 import { CustomSelectComponent } from './select/custom-select.component';
 import { CustomTextareaComponent } from './textarea/custom-textarea.component';
+import { CustomTabBarComponent } from './tab-bar/custom-tab-bar.component';
+import { CustomTabButtonComponent } from './tab-button/custom-tab-button.component';
+import { CustomTabsComponent } from './tabs/custom-tabs.component';
 import { CustomTitleComponent } from './title/custom-title.component';
 import { CustomToggleComponent } from './toggle/custom-toggle.component';
 import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
@@ -29,7 +35,10 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
   imports: [CommonModule, RouterModule, IonicModule],
   declarations: [
     CustomAvatarComponent,
+    CustomBackButtonComponent,
     CustomBadgeComponent,
+    CustomBreadcrumbComponent,
+    CustomBreadcrumbsComponent,
     CustomButtonClearComponent,
     CustomButtonComponent,
     CustomButtonOutlineComponent,
@@ -47,13 +56,19 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomSegmentComponent,
     CustomSelectComponent,
     CustomTextareaComponent,
+    CustomTabBarComponent,
+    CustomTabButtonComponent,
+    CustomTabsComponent,
     CustomTitleComponent,
     CustomToggleComponent,
     CustomToolbarComponent,
   ],
   exports: [
     CustomAvatarComponent,
+    CustomBackButtonComponent,
     CustomBadgeComponent,
+    CustomBreadcrumbComponent,
+    CustomBreadcrumbsComponent,
     CustomButtonClearComponent,
     CustomButtonComponent,
     CustomButtonOutlineComponent,
@@ -71,6 +86,9 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomSegmentComponent,
     CustomSelectComponent,
     CustomTextareaComponent,
+    CustomTabBarComponent,
+    CustomTabButtonComponent,
+    CustomTabsComponent,
     CustomTitleComponent,
     CustomToggleComponent,
     CustomToolbarComponent,
