@@ -17,12 +17,14 @@ import type { LabelVariantKey } from '../label/label-variants';
 })
 export class CustomToggleComponent implements ControlValueAccessor {
   @Input() label?: string;
+  @Input() description?: string;
   @Input() labelVariant: LabelVariantKey = 'label';
   @Input() color: string = 'primary';
   @Input() disabled = false;
   @Input() lines: 'full' | 'inset' | 'none' = 'full';
   @Input() itemClass = '';
   @Input() toggleClass = '';
+  @Input() startIcon?: string;
   @Input() value = false;
 
   @Output() valueChange = new EventEmitter<boolean>();

@@ -219,6 +219,12 @@ ion-button {
   --ripple-color: rgba(var(--ion-color-primary-rgb), 0.2);
 }
 
+.app-button-clear {
+  --background: transparent;
+  --color: var(--ion-color-primary);
+  --ripple-color: rgba(var(--ion-color-primary-rgb), 0.18);
+}
+
 ion-chip {
   --background: var(--app-surface-muted);
   --color: var(--app-text);

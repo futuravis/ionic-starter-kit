@@ -20,22 +20,18 @@
   </section>
 
   <ion-list class="stack">
-    <ion-item lines="full">
-      <ion-icon name="notifications-outline" slot="start"></ion-icon>
-      <ion-label>
-        <h2>Notifications</h2>
-        <p>Push updates and system alerts</p>
-      </ion-label>
-      <ion-toggle [(ngModel)]="notifications"></ion-toggle>
-    </ion-item>
-    <ion-item lines="full">
-      <ion-icon name="analytics-outline" slot="start"></ion-icon>
-      <ion-label>
-        <h2>Usage analytics</h2>
-        <p>Share anonymous product insights</p>
-      </ion-label>
-      <ion-toggle [(ngModel)]="analytics"></ion-toggle>
-    </ion-item>
+    <custom-toggle
+      startIcon="notifications-outline"
+      label="Notifications"
+      description="Push updates and system alerts"
+      [(ngModel)]="notifications"
+    ></custom-toggle>
+    <custom-toggle
+      startIcon="analytics-outline"
+      label="Usage analytics"
+      description="Share anonymous product insights"
+      [(ngModel)]="analytics"
+    ></custom-toggle>
   </ion-list>
 
   <section class="section ion-padding">
@@ -64,7 +60,7 @@
             <h3>Starter kit documentation</h3>
             <p class="muted">Tokens, patterns, and reusable layout recipes.</p>
           </div>
-          <ion-button fill="outline" size="small">Open</ion-button>
+          <custom-button-outline size="small">Open</custom-button-outline>
         </div>
       </ion-card-content>
     </ion-card>

@@ -1,5 +1,12 @@
 <ion-item [lines]="lines" [disabled]="disabled" [class]="itemClass">
-  <custom-label *ngIf="label" [variant]="labelVariant">{{ label }}</custom-label>
+  <ng-content select="[toggle-start]"></ng-content>
+  <ion-icon *ngIf="startIcon" [name]="startIcon" slot="start"></ion-icon>
+  <custom-label *ngIf="label && !description" [variant]="labelVariant">{{ label }}</custom-label>
+  <ion-label *ngIf="description">
+    <h2 *ngIf="label">{{ label }}</h2>
+    <p>{{ description }}</p>
+  </ion-label>
+  <ng-content select="[toggle-label]"></ng-content>
   <ion-toggle
     slot="end"
     [checked]="value"

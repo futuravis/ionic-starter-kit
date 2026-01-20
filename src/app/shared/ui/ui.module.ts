@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { CustomAvatarComponent } from './avatar/custom-avatar.component';
 import { CustomBadgeComponent } from './badge/custom-badge.component';
+import { CustomButtonClearComponent } from './button/custom-button-clear.component';
 import { CustomButtonComponent } from './button/custom-button.component';
 import { CustomButtonOutlineComponent } from './button/custom-button-outline.component';
 import { CustomCardComponent } from './card/custom-card.component';
@@ -20,6 +21,7 @@ import { CustomToggleComponent } from './toggle/custom-toggle.component';
   declarations: [
     CustomAvatarComponent,
     CustomBadgeComponent,
+    CustomButtonClearComponent,
     CustomButtonComponent,
     CustomButtonOutlineComponent,
     CustomCardComponent,
@@ -34,6 +36,7 @@ import { CustomToggleComponent } from './toggle/custom-toggle.component';
   exports: [
     CustomAvatarComponent,
     CustomBadgeComponent,
+    CustomButtonClearComponent,
     CustomButtonComponent,
     CustomButtonOutlineComponent,
     CustomCardComponent,

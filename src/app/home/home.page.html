@@ -11,9 +11,9 @@
     </ion-buttons>
     <ion-title>Home</ion-title>
     <ion-buttons slot="end">
-      <ion-button fill="clear">
+      <custom-button-clear ariaLabel="Sparkles">
         <ion-icon name="sparkles-outline"></ion-icon>
-      </ion-button>
+      </custom-button-clear>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -26,8 +26,8 @@
         <h1 class="display">Build a mobile experience with a bold, token-driven UI.</h1>
         <p class="lead">This starter kit ships with onboarding, navigation patterns, and a full component gallery to accelerate delivery.</p>
         <div class="hero-actions">
-          <ion-button color="primary" routerLink="/tabs/components">Explore Components</ion-button>
-          <ion-button fill="outline" color="primary" routerLink="/tabs/settings">Open Settings</ion-button>
+          <custom-button routerLink="/tabs/components">Explore Components</custom-button>
+          <custom-button-outline routerLink="/tabs/settings">Open Settings</custom-button-outline>
         </div>
       </div>
       <div class="hero-metric">
@@ -68,14 +68,14 @@
   </section>
 
   <section class="section ion-padding">
-    <ion-card class="cta-card">
-      <ion-card-header>
-        <ion-card-title>Ship your first feature fast</ion-card-title>
-        <ion-card-subtitle>Use tokens, layouts, and component patterns already aligned.</ion-card-subtitle>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-button expand="block" color="secondary" routerLink="/tabs/components">See Component Gallery</ion-button>
-      </ion-card-content>
-    </ion-card>
+      <ion-card class="cta-card">
+        <ion-card-header>
+          <ion-card-title>Ship your first feature fast</ion-card-title>
+          <ion-card-subtitle>Use tokens, layouts, and component patterns already aligned.</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <custom-button expand="block" color="secondary" routerLink="/tabs/components">See Component Gallery</custom-button>
+        </ion-card-content>
+      </ion-card>
   </section>
 </ion-content>

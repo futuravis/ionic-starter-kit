@@ -1,4 +1,4 @@
-export type ButtonVariantKey = 'solid' | 'outline';
+export type ButtonVariantKey = 'solid' | 'outline' | 'clear';
 
 export const BUTTON_VARIANTS: Record<
   ButtonVariantKey,
@@ -14,5 +14,9 @@ export const BUTTON_VARIANTS: Record<
   outline: {
     fill: 'outline',
     className: 'app-button-outline',
+  },
+  clear: {
+    fill: 'clear',
+    className: 'app-button-clear',
   },
 };
