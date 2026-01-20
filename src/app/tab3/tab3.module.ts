@@ -6,6 +6,8 @@ import { Tab3Page } from './tab3.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab3PageRoutingModule } from './tab3-routing.module';
+import { UiModule } from '../shared/ui/ui.module';
+
 
 @NgModule({
   imports: [
@@ -14,7 +16,7 @@ import { Tab3PageRoutingModule } from './tab3-routing.module';
     FormsModule,
     ExploreContainerComponentModule,
     Tab3PageRoutingModule
-  ],
+  , UiModule],
   declarations: [Tab3Page]
 })
 export class Tab3PageModule {}

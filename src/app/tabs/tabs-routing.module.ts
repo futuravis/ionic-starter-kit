@@ -32,6 +32,10 @@ const routes: Routes = [
         loadChildren: () => import('../ui-library/ui-library.module').then(m => m.UiLibraryPageModule)
       },
       {
+        path: 'ui-layout',
+        loadChildren: () => import('../ui-layout/ui-layout.module').then(m => m.UiLayoutPageModule)
+      },
+      {
         path: 'ui-buttons',
         loadChildren: () => import('../ui-buttons/ui-buttons.module').then(m => m.UiButtonsPageModule)
       },

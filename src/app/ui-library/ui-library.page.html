@@ -1,19 +1,19 @@
-<ion-header collapse="condense">
-  <ion-toolbar>
-    <ion-title>UI Library</ion-title>
-  </ion-toolbar>
-</ion-header>
+<custom-header collapse="condense">
+  <custom-toolbar>
+    <custom-title>UI Library</custom-title>
+  </custom-toolbar>
+</custom-header>
 
-<ion-header>
-  <ion-toolbar>
+<custom-header>
+  <custom-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>UI Library</ion-title>
-  </ion-toolbar>
-</ion-header>
+    <custom-title>UI Library</custom-title>
+  </custom-toolbar>
+</custom-header>
 
-<ion-content class="ui-library-page">
+<custom-content class="ui-library-page">
   <section class="section ion-padding">
     <div class="section-head">
       <p class="eyebrow">Design System</p>
@@ -29,6 +29,11 @@
         <ion-icon name="radio-button-on-outline"></ion-icon>
         <h3>Buttons</h3>
         <p>Primary and outline button variants.</p>
+      </ion-card>
+      <ion-card class="feature-card" routerLink="/tabs/ui-layout">
+        <ion-icon name="grid-outline"></ion-icon>
+        <h3>Layout</h3>
+        <p>Headers, toolbars, titles, and content wrappers.</p>
       </ion-card>
       <ion-card class="feature-card" routerLink="/tabs/ui-labels">
         <ion-icon name="text-outline"></ion-icon>
@@ -62,4 +67,4 @@
       </ion-card>
     </div>
   </section>
-</ion-content>
+</custom-content>

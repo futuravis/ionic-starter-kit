@@ -5,9 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { ExploreContainerComponent } from './explore-container.component';
+import { UiModule } from '../shared/ui/ui.module';
+
 
 @NgModule({
-  imports: [ CommonModule, FormsModule, IonicModule],
+  imports: [ CommonModule, FormsModule, IonicModule, UiModule],
   declarations: [ExploreContainerComponent],
   exports: [ExploreContainerComponent]
 })

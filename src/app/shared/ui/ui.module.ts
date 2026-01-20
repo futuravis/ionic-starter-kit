@@ -9,6 +9,9 @@ import { CustomButtonComponent } from './button/custom-button.component';
 import { CustomButtonOutlineComponent } from './button/custom-button-outline.component';
 import { CustomCardComponent } from './card/custom-card.component';
 import { CustomChipComponent } from './chip/custom-chip.component';
+import { CustomContentComponent } from './content/custom-content.component';
+import { CustomFooterComponent } from './footer/custom-footer.component';
+import { CustomHeaderComponent } from './header/custom-header.component';
 import { CustomInputComponent } from './input/custom-input.component';
 import { CustomLabelComponent } from './label/custom-label.component';
 import { CustomListItemComponent } from './list-item/custom-list-item.component';
@@ -17,7 +20,9 @@ import { CustomSearchbarComponent } from './searchbar/custom-searchbar.component
 import { CustomSegmentComponent } from './segment/custom-segment.component';
 import { CustomSelectComponent } from './select/custom-select.component';
 import { CustomTextareaComponent } from './textarea/custom-textarea.component';
+import { CustomTitleComponent } from './title/custom-title.component';
 import { CustomToggleComponent } from './toggle/custom-toggle.component';
+import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule, IonicModule],
@@ -29,6 +34,9 @@ import { CustomToggleComponent } from './toggle/custom-toggle.component';
     CustomButtonOutlineComponent,
     CustomCardComponent,
     CustomChipComponent,
+    CustomContentComponent,
+    CustomFooterComponent,
+    CustomHeaderComponent,
     CustomInputComponent,
     CustomLabelComponent,
     CustomListItemComponent,
@@ -37,7 +45,9 @@ import { CustomToggleComponent } from './toggle/custom-toggle.component';
     CustomSegmentComponent,
     CustomSelectComponent,
     CustomTextareaComponent,
+    CustomTitleComponent,
     CustomToggleComponent,
+    CustomToolbarComponent,
   ],
   exports: [
     CustomAvatarComponent,
@@ -47,6 +57,9 @@ import { CustomToggleComponent } from './toggle/custom-toggle.component';
     CustomButtonOutlineComponent,
     CustomCardComponent,
     CustomChipComponent,
+    CustomContentComponent,
+    CustomFooterComponent,
+    CustomHeaderComponent,
     CustomInputComponent,
     CustomLabelComponent,
     CustomListItemComponent,
@@ -55,7 +68,9 @@ import { CustomToggleComponent } from './toggle/custom-toggle.component';
     CustomSegmentComponent,
     CustomSelectComponent,
     CustomTextareaComponent,
+    CustomTitleComponent,
     CustomToggleComponent,
+    CustomToolbarComponent,
   ],
 })
 export class UiModule {}
