@@ -150,6 +150,9 @@
   --app-modal-radius: 24px;
   --app-popover-radius: 16px;
   --app-overlay-backdrop: rgba(8, 12, 28, 0.6);
+  --app-intro-bg: radial-gradient(circle at top, rgba(2, 117, 207, 0.18), transparent 55%),
+    linear-gradient(180deg, #f6f7fb 0%, #edf1fb 60%, #e6ebf7 100%);
+  --app-intro-text: #141a2e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -166,6 +169,9 @@
     --app-shadow-md: 0 12px 24px rgba(0, 0, 0, 0.35);
     --app-shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.4);
     --app-shadow-xl: 0 28px 60px rgba(0, 0, 0, 0.45);
+    --app-intro-bg: radial-gradient(circle at top, rgba(2, 117, 207, 0.22), transparent 55%),
+      linear-gradient(180deg, #0f121f 0%, #12192b 55%, #0d0f1a 100%);
+    --app-intro-text: #f5f6ff;
 
     --ion-color-light: #1b2440;
     --ion-color-light-rgb: 27, 36, 64;
@@ -225,6 +231,17 @@
   --app-shadow-md: 0 12px 24px rgba(15, 18, 31, 0.12);
   --app-shadow-lg: 0 20px 40px rgba(15, 18, 31, 0.16);
   --app-shadow-xl: 0 28px 60px rgba(15, 18, 31, 0.2);
+  --app-intro-bg: radial-gradient(circle at top, rgba(2, 117, 207, 0.18), transparent 55%),
+    linear-gradient(180deg, #f6f7fb 0%, #edf1fb 60%, #e6ebf7 100%);
+  --app-intro-text: #141a2e;
+
+  --ion-background-color: #f6f7fb;
+  --ion-text-color: #141a2e;
+  --ion-text-color-rgb: 20, 26, 46;
+  --ion-toolbar-background: #ffffff;
+  --ion-item-background: #ffffff;
+  --ion-card-background: #ffffff;
+  --ion-tab-bar-background: #ffffff;
 
   --ion-color-light: #f6f7fb;
   --ion-color-light-rgb: 246, 247, 251;

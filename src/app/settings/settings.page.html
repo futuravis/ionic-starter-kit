@@ -40,7 +40,7 @@
 
   <section class="section ion-padding">
     <h2 class="app-h2">Theme</h2>
-    <ion-segment [(ngModel)]="themeMode" (ngModelChange)="onThemeChange($event)" color="primary">
+    <ion-segment [(ngModel)]="themeMode" (ionChange)="onThemeChange($event)" color="primary">
       <ion-segment-button value="system">System</ion-segment-button>
       <ion-segment-button value="light">Light</ion-segment-button>
       <ion-segment-button value="dark">Dark</ion-segment-button>
