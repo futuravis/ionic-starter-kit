@@ -12,6 +12,9 @@ import { CustomChipComponent } from './chip/custom-chip.component';
 import { CustomInputComponent } from './input/custom-input.component';
 import { CustomLabelComponent } from './label/custom-label.component';
 import { CustomListItemComponent } from './list-item/custom-list-item.component';
+import { CustomRangeComponent } from './range/custom-range.component';
+import { CustomSearchbarComponent } from './searchbar/custom-searchbar.component';
+import { CustomSegmentComponent } from './segment/custom-segment.component';
 import { CustomSelectComponent } from './select/custom-select.component';
 import { CustomTextareaComponent } from './textarea/custom-textarea.component';
 import { CustomToggleComponent } from './toggle/custom-toggle.component';
@@ -29,6 +32,9 @@ import { CustomToggleComponent } from './toggle/custom-toggle.component';
     CustomInputComponent,
     CustomLabelComponent,
     CustomListItemComponent,
+    CustomRangeComponent,
+    CustomSearchbarComponent,
+    CustomSegmentComponent,
     CustomSelectComponent,
     CustomTextareaComponent,
     CustomToggleComponent,
@@ -44,6 +50,9 @@ import { CustomToggleComponent } from './toggle/custom-toggle.component';
     CustomInputComponent,
     CustomLabelComponent,
     CustomListItemComponent,
+    CustomRangeComponent,
+    CustomSearchbarComponent,
+    CustomSegmentComponent,
     CustomSelectComponent,
     CustomTextareaComponent,
     CustomToggleComponent,

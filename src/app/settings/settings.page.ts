@@ -11,6 +11,11 @@ export class SettingsPage implements OnInit {
   analytics = false;
   themeMode = 'system';
   textScale = 1;
+  themeOptions = [
+    { value: 'system', label: 'System' },
+    { value: 'light', label: 'Light' },
+    { value: 'dark', label: 'Dark' },
+  ];
 
   private readonly themeStorageKey = 'starter-kit-theme';
 
@@ -22,11 +27,11 @@ export class SettingsPage implements OnInit {
     this.applyTheme(this.themeMode);
   }
 
-  onThemeChange(event: CustomEvent): void {
-    const mode = (event.detail?.value ?? 'system') as string;
-    this.themeMode = mode;
-    localStorage.setItem(this.themeStorageKey, mode);
-    this.applyTheme(mode);
+  onThemeChange(mode: string | number): void {
+    const nextMode = String(mode || 'system');
+    this.themeMode = nextMode;
+    localStorage.setItem(this.themeStorageKey, nextMode);
+    this.applyTheme(nextMode);
   }
 
   private applyTheme(mode: string): void {

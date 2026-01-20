@@ -21,4 +21,13 @@ export class UiInputsPage {
   assignees: string[] = [];
   notifyWatchers = true;
   urgent = false;
+  searchQuery = '';
+  rangeValue = 1;
+  segmentValue = 'list';
+
+  segmentOptions = [
+    { value: 'list', label: 'List', icon: 'list-outline' },
+    { value: 'board', label: 'Board', icon: 'grid-outline' },
+    { value: 'calendar', label: 'Calendar', icon: 'calendar-outline' },
+  ];
 }
