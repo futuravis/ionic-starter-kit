@@ -9,9 +9,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   appPages = [
     { title: 'Intro', url: '/intro', icon: 'sparkles-outline' },
-    { title: 'Home', url: '/tabs/home', icon: 'home-outline' },
-    { title: 'Components', url: '/tabs/components', icon: 'apps-outline' },
-    { title: 'Settings', url: '/tabs/settings', icon: 'settings-outline' }
+    { title: 'Home', url: '/tabs/home', icon: 'home-outline' }
+  ];
+
+  designPages = [
+    { title: 'Design System', url: '/tabs/components', icon: 'sparkles-outline', subtitle: 'Visual design foundation' },
+    { title: 'Typography', url: '/tabs/typography', icon: 'text-outline', subtitle: 'Text styles & hierarchy' },
+    { title: 'Colors & Theming', url: '/tabs/colors', icon: 'color-palette-outline', subtitle: 'Color palette & themes' }
+  ];
+
+  utilityPages = [
+    { title: 'Settings', url: '/tabs/settings', icon: 'settings-outline', subtitle: 'Preferences & system' }
   ];
 
   constructor() {}

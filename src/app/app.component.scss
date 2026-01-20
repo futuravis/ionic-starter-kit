@@ -15,6 +15,44 @@ ion-menu ion-content {
   --background: var(--app-surface);
 }
 
+.menu-profile {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid var(--app-border);
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.profile-email {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--app-text-muted);
+}
+
+.menu-item-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.menu-item-subtitle {
+  font-size: 0.75rem;
+  color: var(--app-text-muted);
+}
+
+ion-list-header {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--app-text-muted);
+  padding-top: 8px;
+}
+
 .menu-footer {
   padding: 16px;
 }

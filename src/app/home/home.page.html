@@ -59,7 +59,7 @@
   <section class="section ion-padding">
     <h2 class="section-title">Starter Highlights</h2>
     <div class="feature-grid">
-      <ion-card class="feature-card" *ngFor="let feature of featureCards">
+      <ion-card class="feature-card" *ngFor="let feature of featureCards" [routerLink]="feature.link">
         <ion-icon [name]="feature.icon"></ion-icon>
         <h3>{{ feature.title }}</h3>
         <p>{{ feature.description }}</p>

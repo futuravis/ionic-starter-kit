@@ -11,6 +11,7 @@ interface FeatureCard {
   title: string;
   description: string;
   icon: string;
+  link: string;
 }
 
 @Component({
@@ -27,8 +28,9 @@ export class HomePage {
   ];
 
   featureCards: FeatureCard[] = [
-    { title: 'Menu + Tabs', description: 'Navigation patterns ready for multi-surface apps.', icon: 'navigate-outline' },
-    { title: 'Tokenized UI', description: 'Typography, radii, spacing, and colors in one system.', icon: 'color-wand-outline' },
-    { title: 'Component Gallery', description: 'Forms, lists, chips, and feedback in one place.', icon: 'apps-outline' }
+    { title: 'Menu + Tabs', description: 'Navigation patterns ready for multi-surface apps.', icon: 'navigate-outline', link: '/tabs/home' },
+    { title: 'Typography', description: 'Heading scale, body styles, and utility classes.', icon: 'text-outline', link: '/tabs/typography' },
+    { title: 'Colors & Theming', description: 'Brand, semantic, and neutral palettes.', icon: 'color-palette-outline', link: '/tabs/colors' },
+    { title: 'Component Gallery', description: 'Forms, lists, chips, and feedback in one place.', icon: 'apps-outline', link: '/tabs/components' }
   ];
 }

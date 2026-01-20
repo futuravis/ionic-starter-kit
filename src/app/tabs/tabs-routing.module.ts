@@ -20,6 +20,14 @@ const routes: Routes = [
         loadChildren: () => import('../settings/settings.module').then(m => m.SettingsPageModule)
       },
       {
+        path: 'typography',
+        loadChildren: () => import('../typography/typography.module').then(m => m.TypographyPageModule)
+      },
+      {
+        path: 'colors',
+        loadChildren: () => import('../colors/colors.module').then(m => m.ColorsPageModule)
+      },
+      {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'

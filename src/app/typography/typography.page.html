@@ -1,0 +1,171 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>Typography</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Typography</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="typography-page">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1 class="app-h1">Design System Typography</h1>
+      <p class="subtitle">Typography reference for consistent text styling across the application.</p>
+      <div class="pill-row">
+        <ion-chip>6 Heading Levels</ion-chip>
+        <ion-chip>4 Body Styles</ion-chip>
+        <ion-chip>8 Color Variants</ion-chip>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="app-h2">Heading Scale</h2>
+      <p class="muted">Use headings to create clear visual hierarchy and structure content.</p>
+    </div>
+    <div class="card-stack">
+      <ion-card *ngFor="let spec of headingSpecs">
+        <ion-card-content>
+          <div class="spec-row">
+            <div>
+              <ion-text>
+                <ng-container [ngSwitch]="spec.tag">
+                  <h1 *ngSwitchCase="'h1'" class="type-sample">{{ spec.title }}</h1>
+                  <h2 *ngSwitchCase="'h2'" class="type-sample">{{ spec.title }}</h2>
+                  <h3 *ngSwitchCase="'h3'" class="type-sample">{{ spec.title }}</h3>
+                  <h4 *ngSwitchCase="'h4'" class="type-sample">{{ spec.title }}</h4>
+                  <h5 *ngSwitchCase="'h5'" class="type-sample">{{ spec.title }}</h5>
+                  <h6 *ngSwitchDefault class="type-sample">{{ spec.title }}</h6>
+                </ng-container>
+              </ion-text>
+              <p class="muted">{{ spec.subtitle }}</p>
+            </div>
+            <div class="spec-meta">
+              <p class="spec-label">{{ spec.label }}</p>
+              <p>Size: <span>{{ spec.size }}</span></p>
+              <p>Weight: <span>{{ spec.weight }}</span></p>
+              <p>Line Height: <span>{{ spec.lineHeight }}</span></p>
+            </div>
+          </div>
+          <pre class="code-block"><code>&lt;ion-text&gt;
+  &lt;{{ spec.tag }}&gt;{{ spec.title }}&lt;/{{ spec.tag }}&gt;
+&lt;/ion-text&gt;</code></pre>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="app-h2">Body Text Scale</h2>
+      <p class="muted">Standard text styles for content, descriptions, and labels.</p>
+    </div>
+    <div class="card-stack">
+      <ion-card *ngFor="let spec of bodySpecs">
+        <ion-card-content class="spec-row">
+          <div>
+            <p class="body-sample" [ngClass]="spec.className">{{ spec.label }} - The quick brown fox jumps over the lazy dog</p>
+            <p class="muted">{{ spec.subtitle }}</p>
+          </div>
+          <div class="spec-meta">
+            <p>Size: <span>{{ spec.size }}</span></p>
+            <p>Weight: <span>{{ spec.weight }}</span></p>
+            <p>Line Height: <span>{{ spec.lineHeight }}</span></p>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="app-h2">Color Variants</h2>
+      <p class="muted">Apply semantic colors to convey meaning and create visual emphasis.</p>
+    </div>
+    <div class="variant-grid">
+      <ion-card class="variant-card" *ngFor="let variant of colorVariants">
+        <ion-card-content>
+          <ion-text [color]="variant.color">
+            <h3 class="variant-title">{{ variant.title }}</h3>
+            <p class="variant-sample">Sample text in {{ variant.title.toLowerCase() }} color</p>
+          </ion-text>
+          <p class="muted">{{ variant.subtitle }}</p>
+          <div class="code-chip">color="{{ variant.color }}"</div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="app-h2">Utility Classes</h2>
+      <p class="muted">Pre-built CSS classes for common text transformations and alignments.</p>
+    </div>
+    <div class="utility-grid">
+      <ion-card>
+        <ion-card-content>
+          <h3 class="app-h3">Text Alignment</h3>
+          <p class="muted">Left aligned text</p>
+          <p class="utility-sample ion-text-start">className="ion-text-start"</p>
+          <p class="muted">Center aligned text</p>
+          <p class="utility-sample ion-text-center">className="ion-text-center"</p>
+          <p class="muted">Right aligned text</p>
+          <p class="utility-sample ion-text-end">className="ion-text-end"</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <h3 class="app-h3">Text Transform</h3>
+          <p class="muted">UPPERCASE TEXT</p>
+          <p class="utility-sample ion-text-uppercase">className="ion-text-uppercase"</p>
+          <p class="muted">lowercase text</p>
+          <p class="utility-sample ion-text-lowercase">className="ion-text-lowercase"</p>
+          <p class="muted">Capitalize Each Word</p>
+          <p class="utility-sample ion-text-capitalize">className="ion-text-capitalize"</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <h3 class="app-h3">Text Wrapping</h3>
+          <p class="muted">This text will wrap normally</p>
+          <p class="utility-sample ion-text-wrap">className="ion-text-wrap"</p>
+          <p class="muted">This text will not wrap</p>
+          <p class="utility-sample ion-text-nowrap">className="ion-text-nowrap"</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="app-h2">Best Practices</h2>
+      <p class="muted">Guidelines to maintain readability and consistent hierarchy.</p>
+    </div>
+    <div class="best-grid">
+      <ion-card class="best-card do">
+        <ion-card-content>
+          <h3 class="app-h3">Do</h3>
+          <ul>
+            <li *ngFor="let item of bestPractices.do">{{ item }}</li>
+          </ul>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="best-card dont">
+        <ion-card-content>
+          <h3 class="app-h3">Don't</h3>
+          <ul>
+            <li *ngFor="let item of bestPractices.dont">{{ item }}</li>
+          </ul>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </section>
+</ion-content>

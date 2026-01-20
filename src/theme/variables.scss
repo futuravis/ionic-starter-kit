@@ -18,10 +18,30 @@
   --app-font-size-xl: 1.6rem;
   --app-font-size-2xl: 2rem;
   --app-font-size-3xl: 2.6rem;
+  --app-font-size-h1: 32px;
+  --app-font-size-h2: 28px;
+  --app-font-size-h3: 24px;
+  --app-font-size-h4: 20px;
+  --app-font-size-h5: 18px;
+  --app-font-size-h6: 16px;
+  --app-font-size-body-lg: 18px;
+  --app-font-size-body: 16px;
+  --app-font-size-body-sm: 14px;
+  --app-font-size-caption: 12px;
   --app-line-height-tight: 1.15;
   --app-line-height-snug: 1.3;
   --app-line-height-normal: 1.5;
   --app-letter-spacing-wide: 0.08em;
+  --app-line-height-h1: 40px;
+  --app-line-height-h2: 36px;
+  --app-line-height-h3: 32px;
+  --app-line-height-h4: 28px;
+  --app-line-height-h5: 24px;
+  --app-line-height-h6: 22px;
+  --app-line-height-body-lg: 28px;
+  --app-line-height-body: 24px;
+  --app-line-height-body-sm: 20px;
+  --app-line-height-caption: 16px;
 
   /* Spacing scale */
   --app-space-1: 4px;
@@ -129,6 +149,13 @@
   --ion-color-light-shade: #d8d9dd;
   --ion-color-light-tint: #f7f8fb;
 
+  --ion-color-medium: #8d96ad;
+  --ion-color-medium-rgb: 141, 150, 173;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #7c8398;
+  --ion-color-medium-tint: #98a0b4;
+
   /* Component tokens */
   --app-button-radius: 14px;
   --app-button-height: 44px;
@@ -186,6 +213,13 @@
     --ion-color-dark-contrast-rgb: 246, 247, 251;
     --ion-color-dark-shade: #0a0e1c;
     --ion-color-dark-tint: #22273b;
+
+    --ion-color-medium: #a7b0c6;
+    --ion-color-medium-rgb: 167, 176, 198;
+    --ion-color-medium-contrast: #0b1020;
+    --ion-color-medium-contrast-rgb: 11, 16, 32;
+    --ion-color-medium-shade: #929bb0;
+    --ion-color-medium-tint: #b1b9cd;
   }
 }
 
@@ -256,4 +290,11 @@
   --ion-color-dark-contrast-rgb: 255, 255, 255;
   --ion-color-dark-shade: #121726;
   --ion-color-dark-tint: #2c3245;
+
+  --ion-color-medium: #8d96ad;
+  --ion-color-medium-rgb: 141, 150, 173;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #7c8398;
+  --ion-color-medium-tint: #98a0b4;
 }

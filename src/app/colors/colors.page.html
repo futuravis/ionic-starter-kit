@@ -1,0 +1,227 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>Colors & Theming</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Colors & Theming</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="outline" size="small" routerLink="/tabs/settings">Theme Settings</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="colors-page">
+  <section class="hero">
+    <div>
+      <h1 class="app-h1">Design System Colors</h1>
+      <p class="subtitle">A comprehensive color system with brand colors, semantic meanings, and theming support.</p>
+      <div class="pill-row">
+        <ion-chip>3 Brand Colors</ion-chip>
+        <ion-chip>3 Semantic Colors</ion-chip>
+        <ion-chip>3 Neutral Colors</ion-chip>
+        <ion-chip>WCAG Compliant</ion-chip>
+      </div>
+    </div>
+    <ion-segment [(ngModel)]="activeTab" value="palette" color="primary">
+      <ion-segment-button value="palette">Palette</ion-segment-button>
+      <ion-segment-button value="semantic">Semantic</ion-segment-button>
+      <ion-segment-button value="shades">Shades</ion-segment-button>
+      <ion-segment-button value="usage">Usage</ion-segment-button>
+    </ion-segment>
+  </section>
+
+  <ng-container *ngIf="activeTab === 'palette'">
+    <section class="section">
+      <h2 class="app-h2">Brand Colors</h2>
+      <p class="muted">Core brand colors that define your application's visual identity.</p>
+      <div class="color-grid">
+        <ion-card class="color-card" *ngFor="let color of brandColors">
+          <div class="swatch" [ngClass]="'swatch-' + color.color">
+            <h3>{{ color.name }}</h3>
+          </div>
+          <ion-card-content>
+            <p class="muted">{{ color.description }}</p>
+            <div class="meta-grid">
+              <div>
+                <p class="meta-label">Variable</p>
+                <p>{{ color.variable }}</p>
+              </div>
+              <div>
+                <p class="meta-label">Hex</p>
+                <p>{{ color.hex }}</p>
+              </div>
+              <div>
+                <p class="meta-label">RGB</p>
+                <p>{{ color.rgb }}</p>
+              </div>
+            </div>
+            <div class="code-chip">color="{{ color.color }}"</div>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="app-h2">Semantic Colors</h2>
+      <p class="muted">Colors that convey meaning and feedback to users based on context.</p>
+      <div class="color-grid">
+        <ion-card class="color-card" *ngFor="let color of semanticColors">
+          <div class="swatch" [ngClass]="'swatch-' + color.color">
+            <h3>{{ color.name }}</h3>
+          </div>
+          <ion-card-content>
+            <p class="muted">{{ color.description }}</p>
+            <div class="meta-grid">
+              <div>
+                <p class="meta-label">Variable</p>
+                <p>{{ color.variable }}</p>
+              </div>
+              <div>
+                <p class="meta-label">Hex</p>
+                <p>{{ color.hex }}</p>
+              </div>
+              <div>
+                <p class="meta-label">RGB</p>
+                <p>{{ color.rgb }}</p>
+              </div>
+            </div>
+            <div class="code-chip">color="{{ color.color }}"</div>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="app-h2">Neutral Colors</h2>
+      <p class="muted">Neutral tones for text, backgrounds, borders, and subtle UI elements.</p>
+      <div class="color-grid">
+        <ion-card class="color-card" *ngFor="let color of neutralColors">
+          <div class="swatch" [ngClass]="'swatch-' + color.color">
+            <h3>{{ color.name }}</h3>
+          </div>
+          <ion-card-content>
+            <p class="muted">{{ color.description }}</p>
+            <div class="meta-grid">
+              <div>
+                <p class="meta-label">Variable</p>
+                <p>{{ color.variable }}</p>
+              </div>
+              <div>
+                <p class="meta-label">Hex</p>
+                <p>{{ color.hex }}</p>
+              </div>
+              <div>
+                <p class="meta-label">RGB</p>
+                <p>{{ color.rgb }}</p>
+              </div>
+            </div>
+            <div class="code-chip">color="{{ color.color }}"</div>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="app-h2">CSS Variables Reference</h2>
+      <p class="muted">Use these CSS variables directly in your custom styles.</p>
+      <pre class="code-block"><code>/* Brand Colors */
+--ion-color-primary
+--ion-color-secondary
+--ion-color-tertiary
+
+/* Semantic Colors */
+--ion-color-success
+--ion-color-warning
+--ion-color-danger
+
+/* Neutral Colors */
+--ion-color-light
+--ion-color-medium
+--ion-color-dark
+
+/* Each color has: --shade, --tint, --contrast, --contrast-rgb */</code></pre>
+    </section>
+  </ng-container>
+
+  <ng-container *ngIf="activeTab === 'semantic'">
+    <section class="section">
+      <h2 class="app-h2">Semantic Colors</h2>
+      <p class="muted">Use these colors to convey status and feedback.</p>
+      <div class="color-grid">
+        <ion-card class="color-card" *ngFor="let color of semanticColors">
+          <div class="swatch" [ngClass]="'swatch-' + color.color">
+            <h3>{{ color.name }}</h3>
+          </div>
+          <ion-card-content>
+            <p class="muted">{{ color.description }}</p>
+            <div class="meta-grid">
+              <div>
+                <p class="meta-label">Variable</p>
+                <p>{{ color.variable }}</p>
+              </div>
+              <div>
+                <p class="meta-label">Hex</p>
+                <p>{{ color.hex }}</p>
+              </div>
+              <div>
+                <p class="meta-label">RGB</p>
+                <p>{{ color.rgb }}</p>
+              </div>
+            </div>
+            <div class="code-chip">color="{{ color.color }}"</div>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </section>
+  </ng-container>
+
+  <ng-container *ngIf="activeTab === 'shades'">
+    <section class="section">
+      <h2 class="app-h2">Shades & Tints</h2>
+      <p class="muted">Every Ionic color includes shade and tint helpers for depth and states.</p>
+      <div class="shade-grid">
+        <ion-card>
+          <ion-card-content>
+            <h3 class="app-h3">Primary</h3>
+            <p class="muted">--ion-color-primary-shade</p>
+            <p class="muted">--ion-color-primary-tint</p>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-content>
+            <h3 class="app-h3">Secondary</h3>
+            <p class="muted">--ion-color-secondary-shade</p>
+            <p class="muted">--ion-color-secondary-tint</p>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-content>
+            <h3 class="app-h3">Tertiary</h3>
+            <p class="muted">--ion-color-tertiary-shade</p>
+            <p class="muted">--ion-color-tertiary-tint</p>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </section>
+  </ng-container>
+
+  <ng-container *ngIf="activeTab === 'usage'">
+    <section class="section">
+      <h2 class="app-h2">Usage Guidelines</h2>
+      <p class="muted">Apply colors consistently to keep interfaces accessible and readable.</p>
+      <ion-card>
+        <ion-card-content>
+          <ul class="usage-list">
+            <li *ngFor="let note of usageNotes">{{ note }}</li>
+          </ul>
+        </ion-card-content>
+      </ion-card>
+    </section>
+  </ng-container>
+</ion-content>
