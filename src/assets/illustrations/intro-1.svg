@@ -1,0 +1,16 @@
+<svg width="640" height="420" viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Starter kit layout">
+  <defs>
+    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f4bff"/>
+      <stop offset="100%" stop-color="#ff9f1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="32" fill="#0f121f"/>
+  <rect x="40" y="40" width="560" height="320" rx="24" fill="#141a2e" stroke="#263259"/>
+  <rect x="72" y="72" width="320" height="36" rx="12" fill="url(#grad1)"/>
+  <rect x="72" y="128" width="260" height="18" rx="9" fill="#2b365e"/>
+  <rect x="72" y="156" width="220" height="18" rx="9" fill="#2b365e"/>
+  <rect x="72" y="210" width="220" height="120" rx="18" fill="#1c2545"/>
+  <rect x="314" y="210" width="246" height="120" rx="18" fill="#1c2545"/>
+  <circle cx="520" cy="116" r="28" fill="#ffb347"/>
+</svg>

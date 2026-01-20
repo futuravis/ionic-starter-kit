@@ -1,0 +1,72 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="settings-page">
+  <section class="section ion-padding">
+    <h1 class="app-h1">Product Settings</h1>
+    <p class="section-subtitle">Controls that show labels, toggles, segments, and sliders styled by tokens.</p>
+  </section>
+
+  <ion-list class="stack">
+    <ion-item lines="full">
+      <ion-icon name="notifications-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Notifications</h2>
+        <p>Push updates and system alerts</p>
+      </ion-label>
+      <ion-toggle [(ngModel)]="notifications"></ion-toggle>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-icon name="analytics-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Usage analytics</h2>
+        <p>Share anonymous product insights</p>
+      </ion-label>
+      <ion-toggle [(ngModel)]="analytics"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Theme</h2>
+    <ion-segment [(ngModel)]="themeMode" color="primary">
+      <ion-segment-button value="system">System</ion-segment-button>
+      <ion-segment-button value="light">Light</ion-segment-button>
+      <ion-segment-button value="dark">Dark</ion-segment-button>
+    </ion-segment>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Text scale</h2>
+    <ion-item lines="none">
+      <ion-range [(ngModel)]="textScale" min="0.8" max="1.4" step="0.1" snaps="true"></ion-range>
+    </ion-item>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Support</h2>
+    <ion-card class="support-card">
+      <ion-card-content>
+        <div class="support-row">
+          <div>
+            <p class="eyebrow">Docs</p>
+            <h3>Starter kit documentation</h3>
+            <p class="muted">Tokens, patterns, and reusable layout recipes.</p>
+          </div>
+          <ion-button fill="outline" size="small">Open</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </section>
+</ion-content>

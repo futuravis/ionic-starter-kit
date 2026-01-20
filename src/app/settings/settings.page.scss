@@ -1,0 +1,47 @@
+.settings-page {
+  --background: var(--app-bg);
+}
+
+.section {
+  display: grid;
+  gap: 12px;
+}
+
+.section-subtitle {
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.stack {
+  display: grid;
+  gap: 8px;
+}
+
+.support-card {
+  margin: 0;
+}
+
+.support-row {
+  display: grid;
+  gap: 12px;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--app-text-muted);
+  margin: 0 0 6px;
+}
+
+.muted {
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .support-row {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+}

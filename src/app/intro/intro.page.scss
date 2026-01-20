@@ -1,0 +1,97 @@
+.intro-page {
+  --background: radial-gradient(circle at top, rgba(31, 75, 255, 0.18), transparent 55%),
+    linear-gradient(180deg, #0f121f 0%, #12192b 55%, #0d0f1a 100%);
+  color: #f5f6ff;
+}
+
+.intro-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 20px 28px;
+}
+
+.intro-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.intro-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 0;
+  flex: 1;
+  padding-bottom: 8px;
+}
+
+.intro-track::-webkit-scrollbar {
+  display: none;
+}
+
+.intro-slide {
+  scroll-snap-align: start;
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  padding: 8px 4px 16px;
+}
+
+.intro-illustration {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.intro-content h1 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin: 0 0 8px;
+}
+
+.intro-content p {
+  color: rgba(245, 246, 255, 0.78);
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.intro-controls {
+  display: grid;
+  gap: 12px;
+}
+
+.intro-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.intro-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.intro-dot.active {
+  width: 24px;
+  background: #f5f6ff;
+}
+
+@media (min-width: 768px) {
+  .intro-shell {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}

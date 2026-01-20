@@ -1,0 +1,36 @@
+<ion-content class="intro-page" [fullscreen]="true" scrollY="false">
+  <div class="intro-shell">
+    <div class="intro-top">
+      <ion-chip color="primary">Starter Kit</ion-chip>
+      <ion-button fill="clear" size="small" (click)="skip()">Skip</ion-button>
+    </div>
+
+    <div class="intro-track" #track (scroll)="onTrackScroll()">
+      <section class="intro-slide" *ngFor="let slide of slides; let i = index">
+        <img class="intro-illustration" [src]="slide.image" [alt]="slide.title" />
+        <div class="intro-content">
+          <h1>{{ slide.title }}</h1>
+          <p>{{ slide.text }}</p>
+          <div class="tag-row">
+            <ion-badge *ngFor="let tag of slide.tags" color="light">{{ tag }}</ion-badge>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="intro-controls">
+      <div class="intro-dots">
+        <button
+          class="intro-dot"
+          *ngFor="let slide of slides; let i = index"
+          [class.active]="i === activeIndex"
+          (click)="goTo(i)"
+          aria-label="Go to slide {{ i + 1 }}"
+        ></button>
+      </div>
+      <ion-button expand="block" (click)="next()">
+        {{ activeIndex === slides.length - 1 ? 'Enter app' : 'Next' }}
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

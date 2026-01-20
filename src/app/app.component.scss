@@ -1,0 +1,40 @@
+ion-menu::part(backdrop) {
+  background: rgba(5, 8, 20, 0.4);
+}
+
+ion-menu::part(container) {
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+ion-menu ion-toolbar {
+  --background: var(--app-surface);
+}
+
+ion-menu ion-content {
+  --background: var(--app-surface);
+}
+
+.menu-footer {
+  padding: 16px;
+}
+
+.menu-card {
+  background: linear-gradient(135deg, rgba(31, 75, 255, 0.1), rgba(255, 193, 7, 0.08));
+  border-radius: 18px;
+  padding: 16px;
+  border: 1px solid rgba(31, 75, 255, 0.2);
+}
+
+.menu-caption {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--app-text-muted);
+  margin: 0 0 6px;
+}
+
+.menu-title {
+  font-weight: 600;
+  margin: 0 0 12px;
+}

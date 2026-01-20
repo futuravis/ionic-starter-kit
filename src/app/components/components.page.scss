@@ -1,0 +1,99 @@
+.components-page {
+  --background: var(--app-bg);
+}
+
+.section {
+  display: grid;
+  gap: 12px;
+}
+
+.section-head {
+  display: grid;
+  gap: 8px;
+}
+
+.section-subtitle {
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.stack {
+  display: grid;
+  gap: 12px;
+}
+
+.button-row,
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.inline-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.token-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.token-swatch {
+  padding: 16px;
+  border-radius: 16px;
+  color: #0f121f;
+  font-weight: 600;
+  text-align: center;
+}
+
+.token-primary {
+  background: var(--ion-color-primary);
+  color: var(--ion-color-primary-contrast);
+}
+
+.token-secondary {
+  background: var(--ion-color-secondary);
+  color: var(--ion-color-secondary-contrast);
+}
+
+.token-tertiary {
+  background: var(--ion-color-tertiary);
+  color: var(--ion-color-tertiary-contrast);
+}
+
+.token-success {
+  background: var(--ion-color-success);
+  color: var(--ion-color-success-contrast);
+}
+
+.token-warning {
+  background: var(--ion-color-warning);
+  color: var(--ion-color-warning-contrast);
+}
+
+.token-danger {
+  background: var(--ion-color-danger);
+  color: var(--ion-color-danger-contrast);
+}
+
+.token-dark {
+  background: var(--ion-color-dark);
+  color: var(--ion-color-dark-contrast);
+}
+
+.token-light {
+  background: var(--ion-color-light);
+  color: var(--ion-color-light-contrast);
+  border: 1px solid var(--app-border);
+}

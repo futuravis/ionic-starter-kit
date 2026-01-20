@@ -1,47 +1,34 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "alwaysStrict": true,
-    "strict": true,
-    "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "declaration": true,
-    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
-    "lib": [
-      "dom",
-      "es2017",
-    ],
-    "module": "es2015",
-    "moduleResolution": "node",
-    "noImplicitAny": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "pretty": true,
-    "removeComments": false,
-    "strictPropertyInitialization": false,
-    "target": "es2017",
-    "baseUrl": ".",
-    "paths": {
-      "@ionic/core/hydrate": [
-        "./core/hydrate"
-      ],
-      "@ionic/core": [
-        "./core"
-      ],
-      "@ionic/angular": [
-        "./angular"
-      ],
-      "@ionic/angular-server": [
-        "./packages/angular-server"
-      ],
-      "@ionic/react": [
-        "./react"
-      ],
-      "@ionic/vue": [
-        "./vue"
-      ]
-    }
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "useDefineForClassFields": false
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
   }
 }

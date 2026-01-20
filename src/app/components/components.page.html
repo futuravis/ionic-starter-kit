@@ -1,0 +1,187 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>Components</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Components</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="components-page">
+  <section class="section ion-padding">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Design System</p>
+        <h1 class="app-h1">Component Gallery</h1>
+        <p class="section-subtitle">Every common Ionic component, mapped to tokens and ready for app screens.</p>
+      </div>
+      <ion-chip color="primary">UI Coverage</ion-chip>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Buttons & chips</h2>
+    <div class="stack">
+      <div class="button-row">
+        <ion-button color="primary">Primary</ion-button>
+        <ion-button color="secondary">Secondary</ion-button>
+        <ion-button color="tertiary">Tertiary</ion-button>
+      </div>
+      <div class="button-row">
+        <ion-button fill="outline">Outline</ion-button>
+        <ion-button fill="clear">Clear</ion-button>
+        <ion-button size="small" color="warning">Small</ion-button>
+      </div>
+      <div class="chip-row">
+        <ion-chip color="primary">Tokenized</ion-chip>
+        <ion-chip color="success" outline="true">Status</ion-chip>
+        <ion-chip color="tertiary">Chips</ion-chip>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Form inputs</h2>
+    <div class="stack">
+      <ion-item lines="full">
+        <ion-label position="stacked">Project name</ion-label>
+        <ion-input placeholder="Starter kit"></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="stacked">Description</ion-label>
+        <ion-textarea placeholder="Short summary" rows="3"></ion-textarea>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label>Toggle notifications</ion-label>
+        <ion-toggle [(ngModel)]="toggleValue"></ion-toggle>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="stacked">Priority</ion-label>
+        <ion-select [(ngModel)]="selectValue" interface="popover">
+          <ion-select-option value="priority">Priority</ion-select-option>
+          <ion-select-option value="balanced">Balanced</ion-select-option>
+          <ion-select-option value="low">Low key</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="stacked">Range</ion-label>
+        <ion-range [(ngModel)]="rangeValue" color="secondary"></ion-range>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="stacked">Search</ion-label>
+        <ion-searchbar placeholder="Search components"></ion-searchbar>
+      </ion-item>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Selection controls</h2>
+    <ion-segment [(ngModel)]="segmentValue" color="primary">
+      <ion-segment-button value="daily">Daily</ion-segment-button>
+      <ion-segment-button value="weekly">Weekly</ion-segment-button>
+      <ion-segment-button value="monthly">Monthly</ion-segment-button>
+    </ion-segment>
+    <ion-list class="stack">
+      <ion-item>
+        <ion-checkbox slot="start" checked></ion-checkbox>
+        <ion-label>Enable experiments</ion-label>
+      </ion-item>
+      <ion-radio-group [(ngModel)]="radioValue">
+        <ion-item>
+          <ion-radio slot="start" value="standard"></ion-radio>
+          <ion-label>Standard layout</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-radio slot="start" value="dense"></ion-radio>
+          <ion-label>Dense layout</ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Feedback & data</h2>
+    <div class="stack">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Status</ion-card-subtitle>
+          <ion-card-title>Build pipeline</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-progress-bar value="0.6" color="secondary"></ion-progress-bar>
+          <div class="inline-row">
+            <ion-badge color="success">Healthy</ion-badge>
+            <ion-badge color="warning">Queue: 2</ion-badge>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-item lines="full">
+        <ion-label>Loading state</ion-label>
+        <ion-spinner name="crescent" color="primary"></ion-spinner>
+      </ion-item>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Lists, avatars, and cards</h2>
+    <ion-list class="stack">
+      <ion-item lines="full">
+        <ion-avatar slot="start">
+          <img alt="Avatar" src="assets/avatar.svg" />
+        </ion-avatar>
+        <ion-label>
+          <h3>Design review</h3>
+          <p>Wednesday, 3:30 PM</p>
+        </ion-label>
+        <ion-badge color="tertiary">New</ion-badge>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-icon name="calendar-outline" slot="start"></ion-icon>
+        <ion-label>Upcoming milestones</ion-label>
+        <ion-button fill="clear" size="small">View</ion-button>
+      </ion-item>
+    </ion-list>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Accordions & layout</h2>
+    <ion-accordion-group>
+      <ion-accordion value="tokens">
+        <ion-item slot="header" color="light">
+          <ion-label>Tokens overview</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Colors, spacing, and typography are defined in global tokens for consistent UI.
+        </div>
+      </ion-accordion>
+      <ion-accordion value="themes">
+        <ion-item slot="header" color="light">
+          <ion-label>Theme surfaces</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          Surface colors and elevation styles are used across cards, sheets, and menus.
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Color tokens</h2>
+    <div class="token-grid">
+      <div class="token-swatch token-primary">Primary</div>
+      <div class="token-swatch token-secondary">Secondary</div>
+      <div class="token-swatch token-tertiary">Tertiary</div>
+      <div class="token-swatch token-success">Success</div>
+      <div class="token-swatch token-warning">Warning</div>
+      <div class="token-swatch token-danger">Danger</div>
+      <div class="token-swatch token-dark">Dark</div>
+      <div class="token-swatch token-light">Light</div>
+    </div>
+  </section>
+</ion-content>

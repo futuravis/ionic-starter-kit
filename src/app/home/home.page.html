@@ -1,0 +1,81 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="sparkles-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="home-page">
+  <section class="hero ion-padding">
+    <div class="hero-card">
+      <div class="hero-copy">
+        <p class="eyebrow">Ionic Angular Starter</p>
+        <h1 class="display">Build a mobile experience with a bold, token-driven UI.</h1>
+        <p class="lead">This starter kit ships with onboarding, navigation patterns, and a full component gallery to accelerate delivery.</p>
+        <div class="hero-actions">
+          <ion-button color="primary" routerLink="/tabs/components">Explore Components</ion-button>
+          <ion-button fill="outline" color="primary" routerLink="/tabs/settings">Open Settings</ion-button>
+        </div>
+      </div>
+      <div class="hero-metric">
+        <div>
+          <p class="metric-label">Ready screens</p>
+          <h2 class="metric-value">04</h2>
+        </div>
+        <div>
+          <p class="metric-label">Token groups</p>
+          <h2 class="metric-value">06</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="section-title">Quick Actions</h2>
+    <div class="quick-actions">
+      <ion-card class="action-card" *ngFor="let action of quickActions">
+        <ion-icon [name]="action.icon" [color]="action.color"></ion-icon>
+        <div>
+          <h3>{{ action.title }}</h3>
+          <p>{{ action.subtitle }}</p>
+        </div>
+      </ion-card>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="section-title">Starter Highlights</h2>
+    <div class="feature-grid">
+      <ion-card class="feature-card" *ngFor="let feature of featureCards">
+        <ion-icon [name]="feature.icon"></ion-icon>
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
+      </ion-card>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <ion-card class="cta-card">
+      <ion-card-header>
+        <ion-card-title>Ship your first feature fast</ion-card-title>
+        <ion-card-subtitle>Use tokens, layouts, and component patterns already aligned.</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button expand="block" color="secondary" routerLink="/tabs/components">See Component Gallery</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </section>
+</ion-content>
