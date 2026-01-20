@@ -1,0 +1,41 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>Avatars</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Avatars</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ui-demo-page">
+  <section class="section ion-padding">
+    <div class="section-head">
+      <p class="eyebrow">UI Library</p>
+      <h1 class="app-h1">Avatars</h1>
+      <p class="section-subtitle">Avatars for lists, cards, and profile chips.</p>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Images</h2>
+    <div class="row">
+      <custom-avatar src="assets/avatar.svg" alt="Profile avatar"></custom-avatar>
+      <custom-avatar src="assets/avatar.svg" alt="Profile avatar" avatarClass="avatar-lg"></custom-avatar>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Initials</h2>
+    <div class="row">
+      <custom-avatar initials="RS"></custom-avatar>
+      <custom-avatar initials="UI" avatarClass="avatar-lg"></custom-avatar>
+      <custom-avatar initials="SM" avatarClass="avatar-sm"></custom-avatar>
+    </div>
+  </section>
+</ion-content>

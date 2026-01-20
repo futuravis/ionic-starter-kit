@@ -1,0 +1,23 @@
+<ion-item
+  [lines]="lines"
+  [button]="button || !!routerLink || !!href"
+  [detail]="detail"
+  [routerLink]="routerLink"
+  [routerDirection]="routerDirection || 'forward'"
+  [href]="href"
+  [target]="target"
+  [disabled]="disabled"
+  [class]="itemClass"
+>
+  <ion-avatar *ngIf="avatarSrc" slot="start">
+    <img [src]="avatarSrc" [alt]="avatarAlt" />
+  </ion-avatar>
+  <ion-icon *ngIf="startIcon && !avatarSrc" [name]="startIcon" slot="start"></ion-icon>
+  <ion-label>
+    <h3>{{ title }}</h3>
+    <p *ngIf="subtitle">{{ subtitle }}</p>
+  </ion-label>
+  <ion-badge *ngIf="badge" [color]="badgeColor">{{ badge }}</ion-badge>
+  <ion-note *ngIf="note" slot="end">{{ note }}</ion-note>
+  <ion-icon *ngIf="endIcon" slot="end" [name]="endIcon"></ion-icon>
+</ion-item>

@@ -28,6 +28,38 @@ const routes: Routes = [
         loadChildren: () => import('../colors/colors.module').then(m => m.ColorsPageModule)
       },
       {
+        path: 'ui-library',
+        loadChildren: () => import('../ui-library/ui-library.module').then(m => m.UiLibraryPageModule)
+      },
+      {
+        path: 'ui-buttons',
+        loadChildren: () => import('../ui-buttons/ui-buttons.module').then(m => m.UiButtonsPageModule)
+      },
+      {
+        path: 'ui-labels',
+        loadChildren: () => import('../ui-labels/ui-labels.module').then(m => m.UiLabelsPageModule)
+      },
+      {
+        path: 'ui-inputs',
+        loadChildren: () => import('../ui-inputs/ui-inputs.module').then(m => m.UiInputsPageModule)
+      },
+      {
+        path: 'ui-cards',
+        loadChildren: () => import('../ui-cards/ui-cards.module').then(m => m.UiCardsPageModule)
+      },
+      {
+        path: 'ui-lists',
+        loadChildren: () => import('../ui-lists/ui-lists.module').then(m => m.UiListsPageModule)
+      },
+      {
+        path: 'ui-chips',
+        loadChildren: () => import('../ui-chips/ui-chips.module').then(m => m.UiChipsPageModule)
+      },
+      {
+        path: 'ui-avatars',
+        loadChildren: () => import('../ui-avatars/ui-avatars.module').then(m => m.UiAvatarsPageModule)
+      },
+      {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'

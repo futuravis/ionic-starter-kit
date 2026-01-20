@@ -40,6 +40,19 @@
       </ion-list>
 
       <ion-list>
+        <ion-list-header>UI Library</ion-list-header>
+        <ion-menu-toggle auto-hide="false" *ngFor="let page of uiPages">
+          <ion-item [routerLink]="page.url" routerDirection="root" lines="none">
+            <ion-icon slot="start" [name]="page.icon"></ion-icon>
+            <ion-label>
+              <div class="menu-item-title">{{ page.title }}</div>
+              <div class="menu-item-subtitle">{{ page.subtitle }}</div>
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      <ion-list>
         <ion-list-header>Utilities</ion-list-header>
         <ion-menu-toggle auto-hide="false" *ngFor="let page of utilityPages">
           <ion-item [routerLink]="page.url" routerDirection="root" lines="none">

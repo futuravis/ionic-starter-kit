@@ -1,0 +1,12 @@
+<ion-item [lines]="lines" [disabled]="disabled" [class]="itemClass">
+  <custom-label *ngIf="label" [variant]="labelVariant">{{ label }}</custom-label>
+  <ion-toggle
+    slot="end"
+    [checked]="value"
+    [disabled]="disabled"
+    [color]="color"
+    [class]="toggleClass"
+    (ionChange)="onToggle($event)"
+    (ionBlur)="onBlur()"
+  ></ion-toggle>
+</ion-item>

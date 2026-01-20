@@ -1,0 +1,49 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>Cards</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cards</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ui-demo-page">
+  <section class="section ion-padding">
+    <div class="section-head">
+      <p class="eyebrow">UI Library</p>
+      <h1 class="app-h1">Cards</h1>
+      <p class="section-subtitle">Reusable card shells for grouped content.</p>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <div class="card-grid">
+      <custom-card title="Service Request" subtitle="Open">
+        <p class="card-body">Atlassian - Bitbucket access request for core team.</p>
+        <div class="card-actions">
+          <custom-button size="small">View</custom-button>
+          <custom-button-outline size="small">Assign</custom-button-outline>
+        </div>
+      </custom-card>
+      <custom-card title="Change Request" subtitle="Pending">
+        <p class="card-body">Deploy approval for the staging environment.</p>
+        <div class="card-actions">
+          <custom-button size="small">Approve</custom-button>
+          <custom-button-outline size="small">Details</custom-button-outline>
+        </div>
+      </custom-card>
+      <custom-card title="Incident" subtitle="Investigating">
+        <p class="card-body">Latency spikes detected in the EU cluster.</p>
+        <div class="card-actions">
+          <custom-button size="small">Open</custom-button>
+        </div>
+      </custom-card>
+    </div>
+  </section>
+</ion-content>

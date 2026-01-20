@@ -1,0 +1,44 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>Chips & Badges</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Chips & Badges</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ui-demo-page">
+  <section class="section ion-padding">
+    <div class="section-head">
+      <p class="eyebrow">UI Library</p>
+      <h1 class="app-h1">Chips & Badges</h1>
+      <p class="section-subtitle">Status and metadata tags for cards and lists.</p>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Chips</h2>
+    <div class="row">
+      <custom-chip color="primary">Primary</custom-chip>
+      <custom-chip color="success">Success</custom-chip>
+      <custom-chip color="warning" [outline]="true">Warning</custom-chip>
+      <custom-chip color="medium">Neutral</custom-chip>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Badges</h2>
+    <div class="row">
+      <custom-badge color="primary">New</custom-badge>
+      <custom-badge color="success">Healthy</custom-badge>
+      <custom-badge color="warning">2</custom-badge>
+      <custom-badge color="danger">Alert</custom-badge>
+    </div>
+  </section>
+</ion-content>

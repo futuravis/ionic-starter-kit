@@ -1,0 +1,54 @@
+.ui-demo-page {
+  --background: var(--app-bg);
+}
+
+.section {
+  display: grid;
+  gap: 12px;
+}
+
+.section-head {
+  display: grid;
+  gap: 8px;
+}
+
+.section-subtitle {
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.card-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.card-body {
+  margin: 0 0 12px;
+  color: var(--app-text-muted);
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

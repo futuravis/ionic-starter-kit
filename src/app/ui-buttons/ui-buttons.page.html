@@ -1,0 +1,54 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>Buttons</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Buttons</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ui-demo-page">
+  <section class="section ion-padding">
+    <div class="section-head">
+      <p class="eyebrow">UI Library</p>
+      <h1 class="app-h1">Buttons</h1>
+      <p class="section-subtitle">Custom buttons keep styles consistent across the app.</p>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Primary & outline</h2>
+    <div class="button-row">
+      <custom-button>Primary</custom-button>
+      <custom-button-outline>Outline</custom-button-outline>
+      <custom-button [disabled]="true">Disabled</custom-button>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Sizes & widths</h2>
+    <div class="button-row">
+      <custom-button size="small">Small</custom-button>
+      <custom-button size="default">Default</custom-button>
+      <custom-button size="large">Large</custom-button>
+    </div>
+    <custom-button expand="block">Block button</custom-button>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Icons & routing</h2>
+    <div class="button-row">
+      <custom-button>
+        <ion-icon slot="start" name="add-outline"></ion-icon>
+        Add item
+      </custom-button>
+      <custom-button-outline routerLink="/tabs/ui-inputs">Go to inputs</custom-button-outline>
+    </div>
+  </section>
+</ion-content>

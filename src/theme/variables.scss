@@ -88,6 +88,9 @@
   --app-text-inverse: #f6f7fb;
   --app-border: #d8deef;
   --app-focus-ring: rgba(2, 117, 207, 0.35);
+  --app-primary-soft: #e6f0ff;
+  --app-primary-soft-rgb: 230, 240, 255;
+  --app-label-color: var(--app-text-muted);
 
   /* Ionic font */
   --ion-font-family: var(--app-font-family);
@@ -199,6 +202,8 @@
     --app-intro-bg: radial-gradient(circle at top, rgba(2, 117, 207, 0.22), transparent 55%),
       linear-gradient(180deg, #0f121f 0%, #12192b 55%, #0d0f1a 100%);
     --app-intro-text: #f5f6ff;
+    --app-primary-soft: rgba(2, 117, 207, 0.2);
+    --app-primary-soft-rgb: 2, 117, 207;
 
     --ion-color-light: #1b2440;
     --ion-color-light-rgb: 27, 36, 64;
@@ -236,6 +241,8 @@
   --app-shadow-md: 0 12px 24px rgba(0, 0, 0, 0.35);
   --app-shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.4);
   --app-shadow-xl: 0 28px 60px rgba(0, 0, 0, 0.45);
+  --app-primary-soft: rgba(2, 117, 207, 0.2);
+  --app-primary-soft-rgb: 2, 117, 207;
 
   --ion-color-light: #1b2440;
   --ion-color-light-rgb: 27, 36, 64;

@@ -7,6 +7,6 @@ import { ComponentsPageRoutingModule } from './components-routing.module';
 
 @NgModule({
   imports: [IonicModule, CommonModule, FormsModule, ComponentsPageRoutingModule],
-  declarations: [ComponentsPage]
+  declarations: [ComponentsPage],
 })
 export class ComponentsPageModule {}

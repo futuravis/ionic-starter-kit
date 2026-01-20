@@ -1,0 +1,30 @@
+<ion-item [lines]="lines" [disabled]="disabled" [class]="itemClass">
+  <custom-label
+    *ngIf="label"
+    [variant]="labelVariant"
+    [position]="labelPosition"
+    [forId]="textareaId"
+  >
+    {{ label }}
+  </custom-label>
+  <ion-textarea
+    [id]="textareaId"
+    [value]="value"
+    [placeholder]="placeholder"
+    [autoGrow]="autoGrow"
+    [rows]="rows"
+    [cols]="cols"
+    [maxlength]="maxlength"
+    [minlength]="minlength"
+    [disabled]="disabled"
+    [readonly]="readonly"
+    [required]="required"
+    [name]="name"
+    [autocapitalize]="autocapitalize"
+    [class]="textareaClass"
+    (ionInput)="onInput($event)"
+    (ionBlur)="onBlur()"
+  ></ion-textarea>
+</ion-item>
+<ion-note *ngIf="helperText && !errorText" class="input-note">{{ helperText }}</ion-note>
+<ion-note *ngIf="errorText" class="input-note input-note--error">{{ errorText }}</ion-note>

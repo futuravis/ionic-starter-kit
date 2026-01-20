@@ -1,0 +1,112 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>Inputs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Inputs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ui-demo-page">
+  <section class="section ion-padding">
+    <div class="section-head">
+      <p class="eyebrow">UI Library</p>
+      <h1 class="app-h1">Inputs</h1>
+      <p class="section-subtitle">Field wrappers with labels, helper text, and error states.</p>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Text fields</h2>
+    <div class="stack">
+      <custom-input
+        label="Project name"
+        placeholder="Starter kit"
+        [helperText]="helper"
+        [(ngModel)]="projectName"
+      ></custom-input>
+      <custom-input
+        label="Owner email"
+        type="email"
+        placeholder="name@company.com"
+        [(ngModel)]="ownerEmail"
+      ></custom-input>
+      <custom-input
+        label="Description"
+        placeholder="Short summary"
+        [(ngModel)]="description"
+      ></custom-input>
+      <custom-input
+        label="Status"
+        placeholder="Required field"
+        [errorText]="error"
+        [(ngModel)]="status"
+      ></custom-input>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Textareas</h2>
+    <div class="stack">
+      <custom-textarea
+        label="Notes"
+        placeholder="Add context for the team"
+        [helperText]="textareaHelp"
+        [(ngModel)]="notes"
+      ></custom-textarea>
+      <custom-textarea
+        label="Blocked reason"
+        placeholder="Required"
+        [errorText]="textareaError"
+        [(ngModel)]="blockedReason"
+      ></custom-textarea>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Selects</h2>
+    <div class="stack">
+      <custom-select
+        label="Priority"
+        placeholder="Pick one"
+        [(ngModel)]="priority"
+      >
+        <ion-select-option value="low">Low</ion-select-option>
+        <ion-select-option value="normal">Normal</ion-select-option>
+        <ion-select-option value="high">High</ion-select-option>
+      </custom-select>
+      <custom-select
+        label="Assignees"
+        placeholder="Select multiple"
+        [multiple]="true"
+        [(ngModel)]="assignees"
+      >
+        <ion-select-option value="rusu">Rusu</ion-select-option>
+        <ion-select-option value="sam">Sam</ion-select-option>
+        <ion-select-option value="taylor">Taylor</ion-select-option>
+      </custom-select>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Toggles</h2>
+    <div class="stack">
+      <custom-toggle label="Notify watchers" [(ngModel)]="notifyWatchers"></custom-toggle>
+      <custom-toggle label="Mark as urgent" color="warning" [(ngModel)]="urgent"></custom-toggle>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">States</h2>
+    <div class="stack">
+      <custom-input label="Disabled" placeholder="Not editable" [disabled]="true"></custom-input>
+      <custom-input label="Read only" placeholder="Read only" [readonly]="true" value="Locked"></custom-input>
+    </div>
+  </section>
+</ion-content>

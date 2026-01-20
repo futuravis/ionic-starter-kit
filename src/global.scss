@@ -182,7 +182,7 @@ ion-accordion ion-item {
   line-height: var(--app-line-height-caption);
   letter-spacing: var(--app-letter-spacing-wide);
   text-transform: uppercase;
-  color: var(--app-text-muted);
+  color: var(--app-label-color);
 }
 
 .token-pill {
@@ -203,6 +203,20 @@ ion-button {
   height: var(--app-button-height);
   font-weight: var(--app-font-weight-semibold);
   text-transform: none;
+}
+
+.app-button-solid {
+  --background: var(--ion-color-primary);
+  --color: var(--ion-color-primary-contrast);
+}
+
+.app-button-outline {
+  --background: var(--app-primary-soft);
+  --background-hover: rgba(var(--app-primary-soft-rgb), 0.9);
+  --background-activated: rgba(var(--app-primary-soft-rgb), 0.8);
+  --color: var(--ion-color-primary);
+  --border-color: var(--ion-color-primary);
+  --ripple-color: rgba(var(--ion-color-primary-rgb), 0.2);
 }
 
 ion-chip {
