@@ -1,0 +1,28 @@
+<custom-collapsible-header
+  title="Inbox"
+  (searchClick)="onSearch()"
+  (filterClick)="onFilter()"
+>
+  <div expanded-content>
+    <p class="eyebrow">Collapsible header</p>
+    <h1 class="app-h1">Inbox</h1>
+    <p class="section-subtitle">Expanded header content sits here and collapses on scroll.</p>
+  </div>
+
+  <div collapsible-content class="ui-demo-page">
+    <section class="section ion-padding">
+      <h2 class="app-h2">Sample content</h2>
+      <div class="stack">
+        <custom-card title="Service request" subtitle="Open">
+          <p class="card-body">Atlassian - Bitbucket access request.</p>
+        </custom-card>
+        <custom-card title="Change request" subtitle="Pending">
+          <p class="card-body">Deploy approval to staging.</p>
+        </custom-card>
+        <custom-card title="Incident" subtitle="Investigating">
+          <p class="card-body">Latency spikes in EU region.</p>
+        </custom-card>
+      </div>
+    </section>
+  </div>
+</custom-collapsible-header>

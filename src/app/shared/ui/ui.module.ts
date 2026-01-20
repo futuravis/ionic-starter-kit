@@ -9,6 +9,7 @@ import { CustomButtonComponent } from './button/custom-button.component';
 import { CustomButtonOutlineComponent } from './button/custom-button-outline.component';
 import { CustomCardComponent } from './card/custom-card.component';
 import { CustomChipComponent } from './chip/custom-chip.component';
+import { CustomCollapsibleHeaderComponent } from './collapsible-header/custom-collapsible-header.component';
 import { CustomContentComponent } from './content/custom-content.component';
 import { CustomFooterComponent } from './footer/custom-footer.component';
 import { CustomHeaderComponent } from './header/custom-header.component';
@@ -34,6 +35,7 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomButtonOutlineComponent,
     CustomCardComponent,
     CustomChipComponent,
+    CustomCollapsibleHeaderComponent,
     CustomContentComponent,
     CustomFooterComponent,
     CustomHeaderComponent,
@@ -57,6 +59,7 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomButtonOutlineComponent,
     CustomCardComponent,
     CustomChipComponent,
+    CustomCollapsibleHeaderComponent,
     CustomContentComponent,
     CustomFooterComponent,
     CustomHeaderComponent,

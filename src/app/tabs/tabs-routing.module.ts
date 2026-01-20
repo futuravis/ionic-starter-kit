@@ -36,6 +36,10 @@ const routes: Routes = [
         loadChildren: () => import('../ui-layout/ui-layout.module').then(m => m.UiLayoutPageModule)
       },
       {
+        path: 'ui-collapsible-header',
+        loadChildren: () => import('../ui-collapsible-header/ui-collapsible-header.module').then(m => m.UiCollapsibleHeaderPageModule)
+      },
+      {
         path: 'ui-buttons',
         loadChildren: () => import('../ui-buttons/ui-buttons.module').then(m => m.UiButtonsPageModule)
       },
