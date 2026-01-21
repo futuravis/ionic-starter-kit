@@ -20,6 +20,6 @@ export class CustomAlertComponent {
   @Input() translucent = false;
   @Input() trigger?: string;
 
-  @Output() didDismiss = new EventEmitter<CustomEvent>();
-  @Output() didPresent = new EventEmitter<CustomEvent>();
+  @Output() didDismiss = new EventEmitter<Event>();
+  @Output() didPresent = new EventEmitter<Event>();
 }

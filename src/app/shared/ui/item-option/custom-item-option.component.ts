@@ -8,7 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class CustomItemOptionComponent {
   @Input() color?: string;
-  @Input() expand?: 'full' | 'block';
   @Input() disabled = false;
   @Input() optionClass = '';
   @Input() icon?: string;

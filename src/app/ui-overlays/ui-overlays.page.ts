@@ -19,7 +19,7 @@ export class UiOverlaysPage {
 
   selectedPriority = 'Balanced';
 
-  alertButtons: (AlertButton | string)[] = [
+  alertButtons: AlertButton[] = [
     { text: 'Cancel', role: 'cancel' },
     { text: 'Confirm', role: 'confirm' },
   ];

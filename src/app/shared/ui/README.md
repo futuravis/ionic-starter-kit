@@ -40,18 +40,23 @@ Segments and range:
 <custom-range label="Text scale" [(ngModel)]="textScale"></custom-range>
 ```
 
+Overlays:
+
+```html
+<custom-toast [isOpen]="showToast" message="Saved" (didDismiss)="showToast = false"></custom-toast>
+```
+
 ## Wrapper catalog
 
-- Buttons: `custom-button`, `custom-button-outline`, `custom-button-clear`
-- Labels: `custom-label`
-- Inputs: `custom-input`, `custom-textarea`, `custom-select`, `custom-searchbar`
-- Toggles: `custom-toggle`
-- Segments: `custom-segment`
-- Range: `custom-range`
-- Cards: `custom-card`
-- Lists: `custom-list-item`
+- Layout: `custom-header`, `custom-toolbar`, `custom-title`, `custom-content`, `custom-footer`, `custom-tabs`, `custom-tab-bar`, `custom-tab-button`
+- Navigation: `custom-back-button`, `custom-breadcrumbs`, `custom-breadcrumb`
+- Buttons & actions: `custom-button`, `custom-button-outline`, `custom-button-clear`, `custom-fab`, `custom-fab-button`, `custom-fab-list`, `custom-ripple`, `custom-floating-footer`
+- Inputs: `custom-input`, `custom-textarea`, `custom-select`, `custom-searchbar`, `custom-toggle`, `custom-checkbox`, `custom-radio-group`, `custom-radio`, `custom-datetime`, `custom-input-password-toggle`
+- Lists: `custom-list`, `custom-list-header`, `custom-item`, `custom-item-sliding`, `custom-item-options`, `custom-item-option`, `custom-note`, `custom-list-item`
 - Tags: `custom-chip`, `custom-badge`
-- Avatars: `custom-avatar`
+- Media & cards: `custom-card`, `custom-avatar`, `custom-thumbnail`, `custom-text`, `custom-img`, `custom-accordion-group`, `custom-accordion`
+- Overlays: `custom-alert`, `custom-action-sheet`, `custom-modal`, `custom-popover`, `custom-toast`, `custom-loading`, `custom-picker`
+- Feedback & state: `custom-progress-bar`, `custom-spinner`, `custom-skeleton`, `custom-refresher`, `custom-refresher-content`, `custom-infinite-scroll`, `custom-infinite-scroll-content`
 
 ## Adding a wrapper
 

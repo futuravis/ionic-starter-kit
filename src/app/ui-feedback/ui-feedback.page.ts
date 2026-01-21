@@ -11,7 +11,7 @@ export class UiFeedbackPage {
 
   handleRefresh(event: CustomEvent): void {
     setTimeout(() => {
-      const target = event.target as { complete: () => void };
+      const target = event.target as unknown as { complete: () => void };
       target.complete();
     }, 800);
   }
@@ -20,7 +20,7 @@ export class UiFeedbackPage {
     setTimeout(() => {
       const nextItems = Array.from({ length: 4 }, (_, index) => `Task ${this.items.length + index + 1}`);
       this.items = [...this.items, ...nextItems];
-      const target = event.target as { complete: () => void; disabled?: boolean };
+      const target = event.target as unknown as { complete: () => void; disabled?: boolean };
       target.complete();
       if (this.items.length >= 18) {
         target.disabled = true;
