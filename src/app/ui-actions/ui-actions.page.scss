@@ -1,0 +1,52 @@
+.ui-demo-page {
+  --background: var(--app-bg);
+}
+
+.section {
+  display: grid;
+  gap: 12px;
+}
+
+.section-head {
+  display: grid;
+  gap: 8px;
+}
+
+.section-subtitle {
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.fab-preview {
+  position: relative;
+  height: 160px;
+  border-radius: 16px;
+  border: 1px dashed var(--app-border);
+  background: var(--app-surface-muted);
+}
+
+.ripple-demo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--app-border);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--app-surface-muted);
+}
+
+.footer-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}

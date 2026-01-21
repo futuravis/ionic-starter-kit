@@ -44,6 +44,10 @@ const routes: Routes = [
         loadChildren: () => import('../ui-navigation/ui-navigation.module').then(m => m.UiNavigationPageModule)
       },
       {
+        path: 'ui-actions',
+        loadChildren: () => import('../ui-actions/ui-actions.module').then(m => m.UiActionsPageModule)
+      },
+      {
         path: 'ui-buttons',
         loadChildren: () => import('../ui-buttons/ui-buttons.module').then(m => m.UiButtonsPageModule)
       },

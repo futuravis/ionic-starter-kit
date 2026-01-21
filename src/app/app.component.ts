@@ -23,6 +23,7 @@ export class AppComponent {
     { title: 'Layout', url: '/tabs/ui-layout', icon: 'grid-outline', subtitle: 'Headers, toolbars, content' },
     { title: 'Collapsible Header', url: '/tabs/ui-collapsible-header', icon: 'resize-outline', subtitle: 'Silver header pattern' },
     { title: 'Navigation', url: '/tabs/ui-navigation', icon: 'navigate-outline', subtitle: 'Tabs and breadcrumbs' },
+    { title: 'Actions', url: '/tabs/ui-actions', icon: 'flash-outline', subtitle: 'FABs and floating footer' },
     { title: 'Buttons', url: '/tabs/ui-buttons', icon: 'radio-button-on-outline', subtitle: 'Primary and outline buttons' },
     { title: 'Labels', url: '/tabs/ui-labels', icon: 'text-outline', subtitle: 'Label presets' },
     { title: 'Inputs', url: '/tabs/ui-inputs', icon: 'create-outline', subtitle: 'Field wrappers' },

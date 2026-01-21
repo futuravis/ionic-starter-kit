@@ -1,0 +1,65 @@
+<custom-header collapse="condense">
+  <custom-toolbar>
+    <custom-title>Actions</custom-title>
+  </custom-toolbar>
+</custom-header>
+
+<custom-header>
+  <custom-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <custom-title>Actions</custom-title>
+  </custom-toolbar>
+</custom-header>
+
+<custom-content class="ui-demo-page">
+  <section class="section ion-padding">
+    <div class="section-head">
+      <p class="eyebrow">UI Library</p>
+      <h1 class="app-h1">Action wrappers</h1>
+      <p class="section-subtitle">Floating action buttons, ripples, and floating footers.</p>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Floating action button</h2>
+    <custom-card>
+      <div class="fab-preview">
+        <custom-fab horizontal="end" vertical="center">
+          <custom-fab-button ariaLabel="Add">
+            <ion-icon name="add"></ion-icon>
+          </custom-fab-button>
+          <custom-fab-list side="top">
+            <custom-fab-button color="secondary" ariaLabel="Edit">
+              <ion-icon name="create-outline"></ion-icon>
+            </custom-fab-button>
+            <custom-fab-button color="tertiary" ariaLabel="Share">
+              <ion-icon name="share-outline"></ion-icon>
+            </custom-fab-button>
+          </custom-fab-list>
+        </custom-fab>
+      </div>
+    </custom-card>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Ripple</h2>
+    <custom-card>
+      <div class="ripple-demo">
+        <span>Tap area</span>
+        <custom-ripple></custom-ripple>
+      </div>
+    </custom-card>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Floating footer</h2>
+    <custom-floating-footer>
+      <div class="footer-actions">
+        <custom-button-outline size="small">Secondary</custom-button-outline>
+        <custom-button>Primary action</custom-button>
+      </div>
+    </custom-floating-footer>
+  </section>
+</custom-content>

@@ -14,12 +14,17 @@ import { CustomCardComponent } from './card/custom-card.component';
 import { CustomChipComponent } from './chip/custom-chip.component';
 import { CustomCollapsibleHeaderComponent } from './collapsible-header/custom-collapsible-header.component';
 import { CustomContentComponent } from './content/custom-content.component';
+import { CustomFabComponent } from './fab/custom-fab.component';
+import { CustomFabButtonComponent } from './fab-button/custom-fab-button.component';
+import { CustomFabListComponent } from './fab-list/custom-fab-list.component';
 import { CustomFooterComponent } from './footer/custom-footer.component';
+import { CustomFloatingFooterComponent } from './floating-footer/custom-floating-footer.component';
 import { CustomHeaderComponent } from './header/custom-header.component';
 import { CustomInputComponent } from './input/custom-input.component';
 import { CustomLabelComponent } from './label/custom-label.component';
 import { CustomListItemComponent } from './list-item/custom-list-item.component';
 import { CustomRangeComponent } from './range/custom-range.component';
+import { CustomRippleComponent } from './ripple/custom-ripple.component';
 import { CustomSearchbarComponent } from './searchbar/custom-searchbar.component';
 import { CustomSegmentComponent } from './segment/custom-segment.component';
 import { CustomSelectComponent } from './select/custom-select.component';
@@ -46,12 +51,17 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomChipComponent,
     CustomCollapsibleHeaderComponent,
     CustomContentComponent,
+    CustomFabComponent,
+    CustomFabButtonComponent,
+    CustomFabListComponent,
     CustomFooterComponent,
+    CustomFloatingFooterComponent,
     CustomHeaderComponent,
     CustomInputComponent,
     CustomLabelComponent,
     CustomListItemComponent,
     CustomRangeComponent,
+    CustomRippleComponent,
     CustomSearchbarComponent,
     CustomSegmentComponent,
     CustomSelectComponent,
@@ -76,12 +86,17 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomChipComponent,
     CustomCollapsibleHeaderComponent,
     CustomContentComponent,
+    CustomFabComponent,
+    CustomFabButtonComponent,
+    CustomFabListComponent,
     CustomFooterComponent,
+    CustomFloatingFooterComponent,
     CustomHeaderComponent,
     CustomInputComponent,
     CustomLabelComponent,
     CustomListItemComponent,
     CustomRangeComponent,
+    CustomRippleComponent,
     CustomSearchbarComponent,
     CustomSegmentComponent,
     CustomSelectComponent,

@@ -1,0 +1,18 @@
+:host {
+  display: block;
+}
+
+.floating-footer {
+  position: sticky;
+  bottom: 16px;
+  z-index: var(--app-z-overlay);
+  padding: 0 16px;
+}
+
+.floating-footer__inner {
+  background: var(--app-surface);
+  border-radius: 16px;
+  box-shadow: var(--app-shadow-lg);
+  padding: 12px;
+  border: 1px solid var(--app-border);
+}
