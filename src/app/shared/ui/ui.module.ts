@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { CustomAccordionComponent } from './accordion/custom-accordion.component';
 import { CustomAccordionGroupComponent } from './accordion-group/custom-accordion-group.component';
+import { CustomActionSheetComponent } from './action-sheet/custom-action-sheet.component';
+import { CustomAlertComponent } from './alert/custom-alert.component';
 import { CustomAvatarComponent } from './avatar/custom-avatar.component';
 import { CustomBackButtonComponent } from './back-button/custom-back-button.component';
 import { CustomBadgeComponent } from './badge/custom-badge.component';
@@ -32,10 +34,14 @@ import { CustomItemOptionComponent } from './item-option/custom-item-option.comp
 import { CustomItemOptionsComponent } from './item-options/custom-item-options.component';
 import { CustomItemSlidingComponent } from './item-sliding/custom-item-sliding.component';
 import { CustomLabelComponent } from './label/custom-label.component';
+import { CustomLoadingComponent } from './loading/custom-loading.component';
 import { CustomListComponent } from './list/custom-list.component';
 import { CustomListHeaderComponent } from './list-header/custom-list-header.component';
 import { CustomListItemComponent } from './list-item/custom-list-item.component';
 import { CustomNoteComponent } from './note/custom-note.component';
+import { CustomModalComponent } from './modal/custom-modal.component';
+import { CustomPickerComponent } from './picker/custom-picker.component';
+import { CustomPopoverComponent } from './popover/custom-popover.component';
 import { CustomRangeComponent } from './range/custom-range.component';
 import { CustomRadioComponent } from './radio/custom-radio.component';
 import { CustomRadioGroupComponent } from './radio-group/custom-radio-group.component';
@@ -49,6 +55,7 @@ import { CustomTabButtonComponent } from './tab-button/custom-tab-button.compone
 import { CustomTabsComponent } from './tabs/custom-tabs.component';
 import { CustomTextComponent } from './text/custom-text.component';
 import { CustomThumbnailComponent } from './thumbnail/custom-thumbnail.component';
+import { CustomToastComponent } from './toast/custom-toast.component';
 import { CustomTitleComponent } from './title/custom-title.component';
 import { CustomToggleComponent } from './toggle/custom-toggle.component';
 import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
@@ -58,6 +65,8 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
   declarations: [
     CustomAccordionComponent,
     CustomAccordionGroupComponent,
+    CustomActionSheetComponent,
+    CustomAlertComponent,
     CustomAvatarComponent,
     CustomBackButtonComponent,
     CustomBadgeComponent,
@@ -86,10 +95,14 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomItemOptionsComponent,
     CustomItemSlidingComponent,
     CustomLabelComponent,
+    CustomLoadingComponent,
     CustomListComponent,
     CustomListHeaderComponent,
     CustomListItemComponent,
     CustomNoteComponent,
+    CustomModalComponent,
+    CustomPickerComponent,
+    CustomPopoverComponent,
     CustomRangeComponent,
     CustomRadioComponent,
     CustomRadioGroupComponent,
@@ -103,6 +116,7 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomTabsComponent,
     CustomTextComponent,
     CustomThumbnailComponent,
+    CustomToastComponent,
     CustomTitleComponent,
     CustomToggleComponent,
     CustomToolbarComponent,
@@ -110,6 +124,8 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
   exports: [
     CustomAccordionComponent,
     CustomAccordionGroupComponent,
+    CustomActionSheetComponent,
+    CustomAlertComponent,
     CustomAvatarComponent,
     CustomBackButtonComponent,
     CustomBadgeComponent,
@@ -138,10 +154,14 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomItemOptionsComponent,
     CustomItemSlidingComponent,
     CustomLabelComponent,
+    CustomLoadingComponent,
     CustomListComponent,
     CustomListHeaderComponent,
     CustomListItemComponent,
     CustomNoteComponent,
+    CustomModalComponent,
+    CustomPickerComponent,
+    CustomPopoverComponent,
     CustomRangeComponent,
     CustomRadioComponent,
     CustomRadioGroupComponent,
@@ -155,6 +175,7 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomTabsComponent,
     CustomTextComponent,
     CustomThumbnailComponent,
+    CustomToastComponent,
     CustomTitleComponent,
     CustomToggleComponent,
     CustomToolbarComponent,

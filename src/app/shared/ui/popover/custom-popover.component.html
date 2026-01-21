@@ -1,0 +1,17 @@
+<ion-popover
+  [isOpen]="isOpen"
+  [trigger]="trigger"
+  [event]="event"
+  [side]="side"
+  [alignment]="alignment"
+  [size]="size"
+  [cssClass]="cssClass"
+  [showBackdrop]="showBackdrop"
+  [backdropDismiss]="backdropDismiss"
+  [translucent]="translucent"
+  [animated]="animated"
+  (ionDidDismiss)="didDismiss.emit($event)"
+  (ionDidPresent)="didPresent.emit($event)"
+>
+  <ng-content></ng-content>
+</ion-popover>

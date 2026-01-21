@@ -1,0 +1,13 @@
+<ion-action-sheet
+  [isOpen]="isOpen"
+  [header]="header"
+  [subHeader]="subHeader"
+  [buttons]="buttons"
+  [cssClass]="cssClass"
+  [backdropDismiss]="backdropDismiss"
+  [keyboardClose]="keyboardClose"
+  [translucent]="translucent"
+  [trigger]="trigger"
+  (ionDidDismiss)="didDismiss.emit($event)"
+  (ionDidPresent)="didPresent.emit($event)"
+></ion-action-sheet>

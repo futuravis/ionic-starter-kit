@@ -1,0 +1,13 @@
+<ion-loading
+  [isOpen]="isOpen"
+  [message]="message"
+  [duration]="duration"
+  [spinner]="spinner"
+  [cssClass]="cssClass"
+  [showBackdrop]="showBackdrop"
+  [backdropDismiss]="backdropDismiss"
+  [keyboardClose]="keyboardClose"
+  [trigger]="trigger"
+  (ionDidDismiss)="didDismiss.emit($event)"
+  (ionDidPresent)="didPresent.emit($event)"
+></ion-loading>

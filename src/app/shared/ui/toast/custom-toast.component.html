@@ -1,0 +1,15 @@
+<ion-toast
+  [isOpen]="isOpen"
+  [message]="message"
+  [color]="color"
+  [duration]="duration"
+  [position]="position"
+  [icon]="icon"
+  [buttons]="buttons"
+  [layout]="layout"
+  [cssClass]="cssClass"
+  [keyboardClose]="keyboardClose"
+  [trigger]="trigger"
+  (ionDidDismiss)="didDismiss.emit($event)"
+  (ionDidPresent)="didPresent.emit($event)"
+></ion-toast>

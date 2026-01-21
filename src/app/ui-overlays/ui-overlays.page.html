@@ -1,0 +1,151 @@
+<custom-header collapse="condense">
+  <custom-toolbar>
+    <custom-title>Overlays</custom-title>
+  </custom-toolbar>
+</custom-header>
+
+<custom-header>
+  <custom-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <custom-title>Overlays</custom-title>
+  </custom-toolbar>
+</custom-header>
+
+<custom-content class="ui-demo-page">
+  <section class="section ion-padding">
+    <div class="section-head">
+      <p class="eyebrow">UI Library</p>
+      <h1 class="app-h1">Overlays</h1>
+      <p class="section-subtitle">Alerts, sheets, toasts, and modals with reusable wrappers.</p>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <div class="section-head">
+      <h2 class="app-h3">Alerts & sheets</h2>
+      <p class="section-subtitle">Use custom-alert and custom-action-sheet for confirmations.</p>
+    </div>
+    <div class="button-row">
+      <custom-button (click)="isAlertOpen = true">Open alert</custom-button>
+      <custom-button-outline (click)="isActionSheetOpen = true">Open action sheet</custom-button-outline>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <div class="section-head">
+      <h2 class="app-h3">Toast & loading</h2>
+      <p class="section-subtitle">Transient feedback for quick updates.</p>
+    </div>
+    <div class="button-row">
+      <custom-button (click)="isToastOpen = true">Show toast</custom-button>
+      <custom-button-outline (click)="openLoading()">Show loading</custom-button-outline>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <div class="section-head">
+      <h2 class="app-h3">Modal & popover</h2>
+      <p class="section-subtitle">Layer in tasks without losing context.</p>
+    </div>
+    <div class="button-row">
+      <custom-button (click)="isModalOpen = true">Open modal</custom-button>
+      <custom-button-outline (click)="openPopover($event)">Open popover</custom-button-outline>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <div class="section-head">
+      <h2 class="app-h3">Picker</h2>
+      <p class="section-subtitle">Compact selection for mobile workflows.</p>
+    </div>
+    <div class="button-row">
+      <custom-button (click)="isPickerOpen = true">Pick priority</custom-button>
+      <custom-text textClass="selection-text">Selected: {{ selectedPriority }}</custom-text>
+    </div>
+  </section>
+
+  <custom-alert
+    [isOpen]="isAlertOpen"
+    header="Confirm assignment"
+    message="Assign this request to yourself?"
+    [buttons]="alertButtons"
+    (didDismiss)="isAlertOpen = false"
+  ></custom-alert>
+
+  <custom-action-sheet
+    [isOpen]="isActionSheetOpen"
+    header="Quick actions"
+    [buttons]="actionSheetButtons"
+    (didDismiss)="isActionSheetOpen = false"
+  ></custom-action-sheet>
+
+  <custom-toast
+    [isOpen]="isToastOpen"
+    message="Request updated"
+    color="primary"
+    [duration]="2000"
+    [buttons]="toastButtons"
+    (didDismiss)="isToastOpen = false"
+  ></custom-toast>
+
+  <custom-loading
+    [isOpen]="isLoadingOpen"
+    message="Syncing data"
+    spinner="crescent"
+    [duration]="1200"
+    (didDismiss)="isLoadingOpen = false"
+  ></custom-loading>
+
+  <custom-modal
+    [isOpen]="isModalOpen"
+    [breakpoints]="[0, 0.4, 0.8]"
+    [initialBreakpoint]="0.4"
+    (didDismiss)="isModalOpen = false"
+  >
+    <ng-template>
+      <custom-header>
+        <custom-toolbar>
+          <custom-title>Quick filters</custom-title>
+          <ion-buttons slot="end">
+            <custom-button-clear (click)="isModalOpen = false">Close</custom-button-clear>
+          </ion-buttons>
+        </custom-toolbar>
+      </custom-header>
+      <custom-content class="modal-content">
+        <p class="app-body-sm">Apply common filters without leaving the list view.</p>
+        <div class="button-row">
+          <custom-button size="small" (click)="isModalOpen = false">Apply</custom-button>
+          <custom-button-outline size="small" (click)="isModalOpen = false">Reset</custom-button-outline>
+        </div>
+      </custom-content>
+    </ng-template>
+  </custom-modal>
+
+  <custom-popover
+    [isOpen]="isPopoverOpen"
+    [event]="popoverEvent"
+    side="bottom"
+    alignment="end"
+    (didDismiss)="isPopoverOpen = false"
+  >
+    <ng-template>
+      <custom-list listClass="popover-list">
+        <custom-item lines="full" [button]="true">
+          <custom-label>Sort by date</custom-label>
+        </custom-item>
+        <custom-item lines="full" [button]="true">
+          <custom-label>Sort by priority</custom-label>
+        </custom-item>
+      </custom-list>
+    </ng-template>
+  </custom-popover>
+
+  <custom-picker
+    [isOpen]="isPickerOpen"
+    [columns]="pickerColumns"
+    [buttons]="pickerButtons"
+    (didDismiss)="isPickerOpen = false"
+  ></custom-picker>
+</custom-content>

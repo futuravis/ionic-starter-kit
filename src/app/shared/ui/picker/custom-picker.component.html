@@ -1,0 +1,10 @@
+<ion-picker
+  [isOpen]="isOpen"
+  [columns]="columns"
+  [buttons]="buttons"
+  [cssClass]="cssClass"
+  [backdropDismiss]="backdropDismiss"
+  [trigger]="trigger"
+  (ionDidDismiss)="didDismiss.emit($event)"
+  (ionDidPresent)="didPresent.emit($event)"
+></ion-picker>

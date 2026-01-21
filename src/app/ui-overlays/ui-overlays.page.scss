@@ -1,0 +1,47 @@
+.ui-demo-page {
+  --background: var(--app-bg);
+}
+
+.section {
+  display: grid;
+  gap: 12px;
+}
+
+.section-head {
+  display: grid;
+  gap: 8px;
+}
+
+.section-subtitle {
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.selection-text {
+  color: var(--app-text-muted);
+}
+
+.modal-content {
+  --background: var(--app-surface);
+  display: grid;
+  gap: 12px;
+}
+
+.popover-list {
+  min-width: 200px;
+}

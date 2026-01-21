@@ -1,0 +1,15 @@
+<ion-alert
+  [isOpen]="isOpen"
+  [header]="header"
+  [subHeader]="subHeader"
+  [message]="message"
+  [buttons]="buttons"
+  [inputs]="inputs"
+  [cssClass]="cssClass"
+  [backdropDismiss]="backdropDismiss"
+  [keyboardClose]="keyboardClose"
+  [translucent]="translucent"
+  [trigger]="trigger"
+  (ionDidDismiss)="didDismiss.emit($event)"
+  (ionDidPresent)="didPresent.emit($event)"
+></ion-alert>
