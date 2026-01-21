@@ -24,8 +24,15 @@ import { CustomFloatingFooterComponent } from './floating-footer/custom-floating
 import { CustomHeaderComponent } from './header/custom-header.component';
 import { CustomInputComponent } from './input/custom-input.component';
 import { CustomInputPasswordToggleComponent } from './input-password-toggle/custom-input-password-toggle.component';
+import { CustomItemComponent } from './item/custom-item.component';
+import { CustomItemOptionComponent } from './item-option/custom-item-option.component';
+import { CustomItemOptionsComponent } from './item-options/custom-item-options.component';
+import { CustomItemSlidingComponent } from './item-sliding/custom-item-sliding.component';
 import { CustomLabelComponent } from './label/custom-label.component';
+import { CustomListComponent } from './list/custom-list.component';
+import { CustomListHeaderComponent } from './list-header/custom-list-header.component';
 import { CustomListItemComponent } from './list-item/custom-list-item.component';
+import { CustomNoteComponent } from './note/custom-note.component';
 import { CustomRangeComponent } from './range/custom-range.component';
 import { CustomRadioComponent } from './radio/custom-radio.component';
 import { CustomRadioGroupComponent } from './radio-group/custom-radio-group.component';
@@ -66,8 +73,15 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomHeaderComponent,
     CustomInputComponent,
     CustomInputPasswordToggleComponent,
+    CustomItemComponent,
+    CustomItemOptionComponent,
+    CustomItemOptionsComponent,
+    CustomItemSlidingComponent,
     CustomLabelComponent,
+    CustomListComponent,
+    CustomListHeaderComponent,
     CustomListItemComponent,
+    CustomNoteComponent,
     CustomRangeComponent,
     CustomRadioComponent,
     CustomRadioGroupComponent,
@@ -106,8 +120,15 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomHeaderComponent,
     CustomInputComponent,
     CustomInputPasswordToggleComponent,
+    CustomItemComponent,
+    CustomItemOptionComponent,
+    CustomItemOptionsComponent,
+    CustomItemSlidingComponent,
     CustomLabelComponent,
+    CustomListComponent,
+    CustomListHeaderComponent,
     CustomListItemComponent,
+    CustomNoteComponent,
     CustomRangeComponent,
     CustomRadioComponent,
     CustomRadioGroupComponent,

@@ -23,7 +23,12 @@
   </section>
 
   <section class="section ion-padding">
-    <ion-list class="stack">
+    <div class="section-head">
+      <h2 class="app-h3">List item wrapper</h2>
+      <p class="section-subtitle">Use the list-item wrapper for standard list rows.</p>
+    </div>
+    <custom-list listClass="stack">
+      <custom-list-header>Recent requests</custom-list-header>
       <custom-list-item
         title="Service Request"
         subtitle="Bitbucket access approval"
@@ -48,6 +53,60 @@
         endIcon="chevron-forward-outline"
         [button]="true"
       ></custom-list-item>
-    </ion-list>
+    </custom-list>
+  </section>
+
+  <section class="section ion-padding">
+    <div class="section-head">
+      <h2 class="app-h3">Composed rows</h2>
+      <p class="section-subtitle">Assemble lists with custom-item + label + note.</p>
+    </div>
+    <custom-list listClass="stack">
+      <custom-item lines="full">
+        <custom-label>
+          <h3>Assigned to me</h3>
+          <p>5 tasks due today</p>
+        </custom-label>
+        <custom-note slot="end">Today</custom-note>
+      </custom-item>
+      <custom-item lines="full" [button]="true" [detail]="true">
+        <custom-label>
+          <h3>Awaiting approval</h3>
+          <p>3 requests need review</p>
+        </custom-label>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </custom-item>
+      <custom-item lines="none" color="light">
+        <custom-label>
+          <h3>Updates</h3>
+          <p>Release notes and changes</p>
+        </custom-label>
+        <custom-note slot="end">New</custom-note>
+      </custom-item>
+    </custom-list>
+  </section>
+
+  <section class="section ion-padding">
+    <div class="section-head">
+      <h2 class="app-h3">Sliding actions</h2>
+      <p class="section-subtitle">Wrap with custom-item-sliding + item-options.</p>
+    </div>
+    <custom-list listClass="stack">
+      <custom-item-sliding>
+        <custom-item lines="full">
+          <custom-label>
+            <h3>Approve access</h3>
+            <p>Swipe to reveal actions</p>
+          </custom-label>
+          <custom-note slot="end">Today</custom-note>
+        </custom-item>
+        <custom-item-options side="start">
+          <custom-item-option color="success" icon="checkmark-circle" label="Approve"></custom-item-option>
+        </custom-item-options>
+        <custom-item-options side="end">
+          <custom-item-option color="danger" icon="trash" label="Delete"></custom-item-option>
+        </custom-item-options>
+      </custom-item-sliding>
+    </custom-list>
   </section>
 </custom-content>

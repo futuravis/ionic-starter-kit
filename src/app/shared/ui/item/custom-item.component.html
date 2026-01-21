@@ -1,0 +1,13 @@
+<ion-item
+  [lines]="lines"
+  [button]="button || !!routerLink || !!href"
+  [detail]="detail"
+  [href]="href"
+  [routerLink]="routerLink"
+  [routerDirection]="routerDirection || 'forward'"
+  [disabled]="disabled"
+  [color]="color"
+  [class]="itemClass"
+>
+  <ng-content></ng-content>
+</ion-item>

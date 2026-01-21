@@ -1,0 +1,5 @@
+<ion-item-option [color]="color" [expand]="expand" [disabled]="disabled" [class]="optionClass">
+  <ion-icon *ngIf="icon" [name]="icon"></ion-icon>
+  <span *ngIf="label">{{ label }}</span>
+  <ng-content></ng-content>
+</ion-item-option>
