@@ -1,19 +1,19 @@
-<custom-header collapse="condense">
-  <custom-toolbar>
-    <custom-title>Feedback & State</custom-title>
-  </custom-toolbar>
-</custom-header>
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>Feedback & State</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-<custom-header>
-  <custom-toolbar>
+<ion-header>
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <custom-title>Feedback & State</custom-title>
-  </custom-toolbar>
-</custom-header>
+    <ion-title>Feedback & State</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-<custom-content class="ui-demo-page">
+<ion-content class="ui-demo-page">
   <custom-refresher (refresh)="handleRefresh($event)">
     <custom-refresher-content
       pullingText="Pull to refresh"
@@ -73,4 +73,4 @@
       <custom-infinite-scroll-content loadingSpinner="dots" loadingText="Loading more"></custom-infinite-scroll-content>
     </custom-infinite-scroll>
   </section>
-</custom-content>
+</ion-content>

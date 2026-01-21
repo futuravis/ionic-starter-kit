@@ -1,19 +1,19 @@
-<custom-header collapse="condense">
-  <custom-toolbar>
-    <custom-title>Navigation</custom-title>
-  </custom-toolbar>
-</custom-header>
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title>Navigation</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-<custom-header>
-  <custom-toolbar>
+<ion-header>
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <custom-title>Navigation</custom-title>
-  </custom-toolbar>
-</custom-header>
+    <ion-title>Navigation</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-<custom-content class="ui-demo-page">
+<ion-content class="ui-demo-page">
   <section class="section ion-padding">
     <div class="section-head">
       <p class="eyebrow">UI Library</p>
@@ -32,22 +32,28 @@
   <section class="section ion-padding">
     <h2 class="app-h2">Back button</h2>
     <custom-card>
-      <custom-toolbar>
+      <ion-toolbar>
         <custom-back-button defaultHref="/tabs/home"></custom-back-button>
-        <custom-title>Detail view</custom-title>
-      </custom-toolbar>
+        <ion-title>Detail view</ion-title>
+      </ion-toolbar>
     </custom-card>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Tabs</h2>
     <custom-card>
-      <pre class="code-block"><code>&lt;custom-tabs&gt;
-  &lt;custom-tab-bar slot="bottom"&gt;
-    &lt;custom-tab-button tab="home" icon="home-outline" label="Home"&gt;&lt;/custom-tab-button&gt;
-    &lt;custom-tab-button tab="settings" icon="settings-outline" label="Settings"&gt;&lt;/custom-tab-button&gt;
-  &lt;/custom-tab-bar&gt;
-&lt;/custom-tabs&gt;</code></pre>
+      <pre class="code-block"><code>&lt;ion-tabs&gt;
+  &lt;ion-tab-bar slot="bottom"&gt;
+    &lt;ion-tab-button tab="home" href="/tabs/home"&gt;
+      &lt;ion-icon name="home-outline"&gt;&lt;/ion-icon&gt;
+      &lt;ion-label&gt;Home&lt;/ion-label&gt;
+    &lt;/ion-tab-button&gt;
+    &lt;ion-tab-button tab="settings" href="/tabs/settings"&gt;
+      &lt;ion-icon name="settings-outline"&gt;&lt;/ion-icon&gt;
+      &lt;ion-label&gt;Settings&lt;/ion-label&gt;
+    &lt;/ion-tab-button&gt;
+  &lt;/ion-tab-bar&gt;
+&lt;/ion-tabs&gt;</code></pre>
     </custom-card>
   </section>
-</custom-content>
+</ion-content>

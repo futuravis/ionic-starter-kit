@@ -6,7 +6,7 @@ consistent across the app.
 
 ## Rules
 
-- Pages should use `custom-*` components instead of raw `ion-*` tags.
+- Pages should use `custom-*` components for UI primitives (layout can use Ionic `ion-*` tags).
 - New design components must be added as wrappers in this folder.
 - Update the UI Library demos when adding a new wrapper.
 
@@ -48,7 +48,7 @@ Overlays:
 
 ## Wrapper catalog
 
-- Layout: `custom-header`, `custom-toolbar`, `custom-title`, `custom-content`, `custom-footer`, `custom-tabs`, `custom-tab-bar`, `custom-tab-button`
+- Layout: use Ionic `ion-header`, `ion-toolbar`, `ion-title`, `ion-content`, `ion-footer`, `ion-tabs`, `ion-tab-bar`, `ion-tab-button`
 - Navigation: `custom-back-button`
 - Buttons & actions: `custom-button`, `custom-button-outline`, `custom-button-clear`, `custom-fab`, `custom-fab-button`, `custom-fab-list`, `custom-ripple`, `custom-floating-footer`
 - Inputs: `custom-input`, `custom-textarea`, `custom-select`, `custom-searchbar`, `custom-toggle`, `custom-checkbox`, `custom-radio-group`, `custom-radio`, `custom-datetime`, `custom-input-password-toggle`

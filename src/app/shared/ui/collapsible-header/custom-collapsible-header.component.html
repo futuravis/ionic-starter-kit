@@ -1,23 +1,23 @@
-<custom-header>
-  <custom-toolbar [toolbarClass]="expandedToolbarClass">
+<ion-header>
+  <ion-toolbar [class]="expandedToolbarClass">
     <ion-buttons slot="start">
       <ion-menu-button *ngIf="showMenu"></ion-menu-button>
       <ng-content select="[expanded-start]"></ng-content>
     </ion-buttons>
-    <custom-title *ngIf="title">{{ title }}</custom-title>
+    <ion-title *ngIf="title">{{ title }}</ion-title>
     <ng-content select="[expanded-title]"></ng-content>
     <ion-buttons slot="end">
       <ng-content select="[expanded-end]"></ng-content>
     </ion-buttons>
-  </custom-toolbar>
+  </ion-toolbar>
   <div class="collapsible-expanded">
     <ng-content select="[expanded-content]"></ng-content>
   </div>
-</custom-header>
+</ion-header>
 
-<custom-content [contentClass]="contentClass">
-  <custom-header collapse="condense">
-    <custom-toolbar [toolbarClass]="condensedToolbarClass">
+<ion-content [class]="contentClass">
+  <ion-header collapse="condense">
+    <ion-toolbar [class]="condensedToolbarClass">
       <ion-buttons slot="start">
         <ion-menu-button *ngIf="showMenu"></ion-menu-button>
         <ng-content select="[condensed-start]"></ng-content>
@@ -39,8 +39,8 @@
         </custom-button-clear>
         <ng-content select="[condensed-end]"></ng-content>
       </ion-buttons>
-    </custom-toolbar>
-  </custom-header>
+    </ion-toolbar>
+  </ion-header>
 
   <ng-content select="[collapsible-content]"></ng-content>
-</custom-content>
+</ion-content>

@@ -16,14 +16,11 @@ import { CustomCardComponent } from './card/custom-card.component';
 import { CustomChipComponent } from './chip/custom-chip.component';
 import { CustomCheckboxComponent } from './checkbox/custom-checkbox.component';
 import { CustomCollapsibleHeaderComponent } from './collapsible-header/custom-collapsible-header.component';
-import { CustomContentComponent } from './content/custom-content.component';
 import { CustomDatetimeComponent } from './datetime/custom-datetime.component';
 import { CustomFabComponent } from './fab/custom-fab.component';
 import { CustomFabButtonComponent } from './fab-button/custom-fab-button.component';
 import { CustomFabListComponent } from './fab-list/custom-fab-list.component';
-import { CustomFooterComponent } from './footer/custom-footer.component';
 import { CustomFloatingFooterComponent } from './floating-footer/custom-floating-footer.component';
-import { CustomHeaderComponent } from './header/custom-header.component';
 import { CustomImgComponent } from './img/custom-img.component';
 import { CustomInfiniteScrollComponent } from './infinite-scroll/custom-infinite-scroll.component';
 import { CustomInfiniteScrollContentComponent } from './infinite-scroll-content/custom-infinite-scroll-content.component';
@@ -55,15 +52,10 @@ import { CustomSelectComponent } from './select/custom-select.component';
 import { CustomSkeletonComponent } from './skeleton/custom-skeleton.component';
 import { CustomSpinnerComponent } from './spinner/custom-spinner.component';
 import { CustomTextareaComponent } from './textarea/custom-textarea.component';
-import { CustomTabBarComponent } from './tab-bar/custom-tab-bar.component';
-import { CustomTabButtonComponent } from './tab-button/custom-tab-button.component';
-import { CustomTabsComponent } from './tabs/custom-tabs.component';
 import { CustomTextComponent } from './text/custom-text.component';
 import { CustomThumbnailComponent } from './thumbnail/custom-thumbnail.component';
 import { CustomToastComponent } from './toast/custom-toast.component';
-import { CustomTitleComponent } from './title/custom-title.component';
 import { CustomToggleComponent } from './toggle/custom-toggle.component';
-import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule, IonicModule],
@@ -82,14 +74,11 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomChipComponent,
     CustomCheckboxComponent,
     CustomCollapsibleHeaderComponent,
-    CustomContentComponent,
     CustomDatetimeComponent,
     CustomFabComponent,
     CustomFabButtonComponent,
     CustomFabListComponent,
-    CustomFooterComponent,
     CustomFloatingFooterComponent,
-    CustomHeaderComponent,
     CustomImgComponent,
     CustomInfiniteScrollComponent,
     CustomInfiniteScrollContentComponent,
@@ -121,15 +110,10 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomSkeletonComponent,
     CustomSpinnerComponent,
     CustomTextareaComponent,
-    CustomTabBarComponent,
-    CustomTabButtonComponent,
-    CustomTabsComponent,
     CustomTextComponent,
     CustomThumbnailComponent,
     CustomToastComponent,
-    CustomTitleComponent,
     CustomToggleComponent,
-    CustomToolbarComponent,
   ],
   exports: [
     CustomAccordionComponent,
@@ -146,14 +130,11 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomChipComponent,
     CustomCheckboxComponent,
     CustomCollapsibleHeaderComponent,
-    CustomContentComponent,
     CustomDatetimeComponent,
     CustomFabComponent,
     CustomFabButtonComponent,
     CustomFabListComponent,
-    CustomFooterComponent,
     CustomFloatingFooterComponent,
-    CustomHeaderComponent,
     CustomImgComponent,
     CustomInfiniteScrollComponent,
     CustomInfiniteScrollContentComponent,
@@ -185,15 +166,10 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomSkeletonComponent,
     CustomSpinnerComponent,
     CustomTextareaComponent,
-    CustomTabBarComponent,
-    CustomTabButtonComponent,
-    CustomTabsComponent,
     CustomTextComponent,
     CustomThumbnailComponent,
     CustomToastComponent,
-    CustomTitleComponent,
     CustomToggleComponent,
-    CustomToolbarComponent,
   ],
 })
 export class UiModule {}

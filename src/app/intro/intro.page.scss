@@ -49,6 +49,12 @@
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
+  display: block;
+  padding: 12px;
+  border-radius: 20px;
+  background: var(--app-surface);
+  border: 1px solid var(--app-border);
+  box-shadow: var(--app-shadow-sm);
 }
 
 .intro-content h1 {
