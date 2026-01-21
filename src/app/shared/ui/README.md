@@ -49,7 +49,7 @@ Overlays:
 ## Wrapper catalog
 
 - Layout: `custom-header`, `custom-toolbar`, `custom-title`, `custom-content`, `custom-footer`, `custom-tabs`, `custom-tab-bar`, `custom-tab-button`
-- Navigation: `custom-back-button`, `custom-breadcrumbs`, `custom-breadcrumb`
+- Navigation: `custom-back-button`
 - Buttons & actions: `custom-button`, `custom-button-outline`, `custom-button-clear`, `custom-fab`, `custom-fab-button`, `custom-fab-list`, `custom-ripple`, `custom-floating-footer`
 - Inputs: `custom-input`, `custom-textarea`, `custom-select`, `custom-searchbar`, `custom-toggle`, `custom-checkbox`, `custom-radio-group`, `custom-radio`, `custom-datetime`, `custom-input-password-toggle`
 - Lists: `custom-list`, `custom-list-header`, `custom-item`, `custom-item-sliding`, `custom-item-options`, `custom-item-option`, `custom-note`, `custom-list-item`

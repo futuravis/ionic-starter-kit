@@ -9,8 +9,6 @@ import { CustomAlertComponent } from './alert/custom-alert.component';
 import { CustomAvatarComponent } from './avatar/custom-avatar.component';
 import { CustomBackButtonComponent } from './back-button/custom-back-button.component';
 import { CustomBadgeComponent } from './badge/custom-badge.component';
-import { CustomBreadcrumbComponent } from './breadcrumb/custom-breadcrumb.component';
-import { CustomBreadcrumbsComponent } from './breadcrumbs/custom-breadcrumbs.component';
 import { CustomButtonClearComponent } from './button/custom-button-clear.component';
 import { CustomButtonComponent } from './button/custom-button.component';
 import { CustomButtonOutlineComponent } from './button/custom-button-outline.component';
@@ -77,8 +75,6 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomAvatarComponent,
     CustomBackButtonComponent,
     CustomBadgeComponent,
-    CustomBreadcrumbComponent,
-    CustomBreadcrumbsComponent,
     CustomButtonClearComponent,
     CustomButtonComponent,
     CustomButtonOutlineComponent,
@@ -143,8 +139,6 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomAvatarComponent,
     CustomBackButtonComponent,
     CustomBadgeComponent,
-    CustomBreadcrumbComponent,
-    CustomBreadcrumbsComponent,
     CustomButtonClearComponent,
     CustomButtonComponent,
     CustomButtonOutlineComponent,
