@@ -17,6 +17,11 @@ export class UiInputsPage {
   blockedReason = '';
   textareaHelp = 'Shared with the delivery team.';
   textareaError = 'Please include a reason.';
+  password = '';
+  emailAlerts = true;
+  marketingOptIn = false;
+  radioChoice = 'standard';
+  dueDate = '';
   priority = '';
   assignees: string[] = [];
   notifyWatchers = true;

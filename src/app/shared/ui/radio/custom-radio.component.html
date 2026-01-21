@@ -1,0 +1,14 @@
+<ion-item [lines]="lines" [disabled]="disabled" [class]="itemClass">
+  <ion-radio
+    slot="start"
+    [value]="value"
+    [color]="color"
+    [disabled]="disabled"
+    [class]="radioClass"
+  ></ion-radio>
+  <ion-label *ngIf="label || description">
+    <h2 *ngIf="label">{{ label }}</h2>
+    <p *ngIf="description">{{ description }}</p>
+  </ion-label>
+  <ng-content></ng-content>
+</ion-item>

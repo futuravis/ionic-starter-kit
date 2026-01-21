@@ -37,6 +37,9 @@
         placeholder="name@company.com"
         [(ngModel)]="ownerEmail"
       ></custom-input>
+      <custom-input label="Password" type="password" [(ngModel)]="password">
+        <custom-input-password-toggle></custom-input-password-toggle>
+      </custom-input>
       <custom-input
         label="Description"
         placeholder="Short summary"
@@ -54,6 +57,40 @@
   <section class="section ion-padding">
     <h2 class="app-h2">Search</h2>
     <custom-searchbar placeholder="Search tasks" [(ngModel)]="searchQuery"></custom-searchbar>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Checkboxes</h2>
+    <div class="stack">
+      <custom-checkbox
+        label="Email alerts"
+        description="Get notifications about updates"
+        [(ngModel)]="emailAlerts"
+      ></custom-checkbox>
+      <custom-checkbox
+        label="Marketing opt-in"
+        description="Share product updates"
+        [(ngModel)]="marketingOptIn"
+      ></custom-checkbox>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Radio group</h2>
+    <custom-radio-group [(ngModel)]="radioChoice">
+      <custom-radio label="Standard" description="Balanced defaults" value="standard"></custom-radio>
+      <custom-radio label="Compact" description="Dense spacing" value="compact"></custom-radio>
+      <custom-radio label="Comfortable" description="More breathing room" value="comfortable"></custom-radio>
+    </custom-radio-group>
+  </section>
+
+  <section class="section ion-padding">
+    <h2 class="app-h2">Datetime</h2>
+    <custom-datetime
+      label="Due date"
+      presentation="date"
+      [(ngModel)]="dueDate"
+    ></custom-datetime>
   </section>
 
   <section class="section ion-padding">

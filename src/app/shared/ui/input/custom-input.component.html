@@ -24,7 +24,9 @@
     [class]="inputClass"
     (ionInput)="onInput($event)"
     (ionBlur)="onBlur()"
-  ></ion-input>
+  >
+    <ng-content></ng-content>
+  </ion-input>
 </ion-item>
 <ion-note *ngIf="helperText && !errorText" class="input-note">{{ helperText }}</ion-note>
 <ion-note *ngIf="errorText" class="input-note input-note--error">{{ errorText }}</ion-note>

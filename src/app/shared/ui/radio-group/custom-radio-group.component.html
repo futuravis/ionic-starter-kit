@@ -1,0 +1,10 @@
+<ion-radio-group
+  [value]="value"
+  [name]="name"
+  [allowEmptySelection]="allowEmptySelection"
+  [class]="radioGroupClass"
+  (ionChange)="onRadioChange($event)"
+  (ionBlur)="onBlur()"
+>
+  <ng-content></ng-content>
+</ion-radio-group>
