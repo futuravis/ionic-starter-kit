@@ -2,7 +2,7 @@
   --background: var(--app-bg);
 }
 
-.home-description {
+.home-content {
   display: grid;
   gap: 12px;
 }
@@ -13,4 +13,63 @@
   text-transform: uppercase;
   color: var(--app-text-muted);
   margin: 0;
+}
+
+.highlight-grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.highlight-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 12px;
+  border-radius: 14px;
+  background: var(--app-surface);
+  border: 1px solid var(--app-border);
+}
+
+.highlight-card ion-icon {
+  font-size: 20px;
+  color: var(--ion-color-primary);
+}
+
+.highlight-title {
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.highlight-text {
+  margin: 0;
+  color: var(--app-text-muted);
+  font-size: 0.9rem;
+}
+
+.section {
+  display: grid;
+  gap: 10px;
+}
+
+.section-subtitle {
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.component-list {
+  display: grid;
+  gap: 10px;
+}
+
+.empty-state {
+  margin: 12px 0 0;
+  color: var(--app-text-muted);
+}
+
+@media (min-width: 768px) {
+  .highlight-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }

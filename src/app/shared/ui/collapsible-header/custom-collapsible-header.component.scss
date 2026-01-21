@@ -9,3 +9,9 @@
   gap: 6px;
   align-items: center;
 }
+
+.condensed-search {
+  flex: 1;
+  min-width: 0;
+  padding: 0 8px;
+}

@@ -1,25 +1,51 @@
-<ion-header collapse="condense">
-  <ion-toolbar>
-    <ion-title>Home</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Home</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content class="home-page">
-  <section class="home-description ion-padding">
+<custom-collapsible-header
+  title="Home"
+  [showSearch]="false"
+  [showFilter]="false"
+  contentClass="home-page"
+>
+  <div expanded-content>
     <p class="eyebrow">Starter Kit</p>
     <h1 class="app-h1">Build mobile UIs with a clean, reusable component layer.</h1>
     <p class="app-body-lg">
-      Use the Config tab for design system setup, the Libs tab for reusable UI demos,
-      and Settings to control app behavior.
+      Config drives design system setup, Libs holds the reusable UI demos, and Settings
+      controls app behavior.
     </p>
-  </section>
-</ion-content>
+    <div class="highlight-grid">
+      <div class="highlight-card" *ngFor="let item of highlights">
+        <ion-icon [name]="item.icon"></ion-icon>
+        <div>
+          <p class="highlight-title">{{ item.title }}</p>
+          <p class="highlight-text">{{ item.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <custom-searchbar
+    condensed-search
+    placeholder="Search UI components"
+    [(ngModel)]="searchQuery"
+  ></custom-searchbar>
+
+  <div collapsible-content class="home-content">
+    <section class="section ion-padding">
+      <h2 class="app-h3">Shared UI components</h2>
+      <p class="section-subtitle">Search and browse the wrapper layer used across the app.</p>
+    </section>
+
+    <section class="section ion-padding">
+      <custom-list listClass="component-list">
+        <ng-container *ngFor="let group of filteredGroups">
+          <custom-list-header>{{ group.group }}</custom-list-header>
+          <custom-item lines="full" *ngFor="let item of group.items">
+            <custom-label>{{ item }}</custom-label>
+          </custom-item>
+        </ng-container>
+      </custom-list>
+      <p class="empty-state" *ngIf="filteredGroups.length === 0">
+        No components match "{{ searchQuery }}".
+      </p>
+    </section>
+  </div>
+</custom-collapsible-header>
