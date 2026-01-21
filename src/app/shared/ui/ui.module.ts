@@ -27,6 +27,8 @@ import { CustomFooterComponent } from './footer/custom-footer.component';
 import { CustomFloatingFooterComponent } from './floating-footer/custom-floating-footer.component';
 import { CustomHeaderComponent } from './header/custom-header.component';
 import { CustomImgComponent } from './img/custom-img.component';
+import { CustomInfiniteScrollComponent } from './infinite-scroll/custom-infinite-scroll.component';
+import { CustomInfiniteScrollContentComponent } from './infinite-scroll-content/custom-infinite-scroll-content.component';
 import { CustomInputComponent } from './input/custom-input.component';
 import { CustomInputPasswordToggleComponent } from './input-password-toggle/custom-input-password-toggle.component';
 import { CustomItemComponent } from './item/custom-item.component';
@@ -42,13 +44,18 @@ import { CustomNoteComponent } from './note/custom-note.component';
 import { CustomModalComponent } from './modal/custom-modal.component';
 import { CustomPickerComponent } from './picker/custom-picker.component';
 import { CustomPopoverComponent } from './popover/custom-popover.component';
+import { CustomProgressBarComponent } from './progress-bar/custom-progress-bar.component';
 import { CustomRangeComponent } from './range/custom-range.component';
 import { CustomRadioComponent } from './radio/custom-radio.component';
 import { CustomRadioGroupComponent } from './radio-group/custom-radio-group.component';
+import { CustomRefresherComponent } from './refresher/custom-refresher.component';
+import { CustomRefresherContentComponent } from './refresher-content/custom-refresher-content.component';
 import { CustomRippleComponent } from './ripple/custom-ripple.component';
 import { CustomSearchbarComponent } from './searchbar/custom-searchbar.component';
 import { CustomSegmentComponent } from './segment/custom-segment.component';
 import { CustomSelectComponent } from './select/custom-select.component';
+import { CustomSkeletonComponent } from './skeleton/custom-skeleton.component';
+import { CustomSpinnerComponent } from './spinner/custom-spinner.component';
 import { CustomTextareaComponent } from './textarea/custom-textarea.component';
 import { CustomTabBarComponent } from './tab-bar/custom-tab-bar.component';
 import { CustomTabButtonComponent } from './tab-button/custom-tab-button.component';
@@ -88,6 +95,8 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomFloatingFooterComponent,
     CustomHeaderComponent,
     CustomImgComponent,
+    CustomInfiniteScrollComponent,
+    CustomInfiniteScrollContentComponent,
     CustomInputComponent,
     CustomInputPasswordToggleComponent,
     CustomItemComponent,
@@ -103,13 +112,18 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomModalComponent,
     CustomPickerComponent,
     CustomPopoverComponent,
+    CustomProgressBarComponent,
     CustomRangeComponent,
     CustomRadioComponent,
     CustomRadioGroupComponent,
+    CustomRefresherComponent,
+    CustomRefresherContentComponent,
     CustomRippleComponent,
     CustomSearchbarComponent,
     CustomSegmentComponent,
     CustomSelectComponent,
+    CustomSkeletonComponent,
+    CustomSpinnerComponent,
     CustomTextareaComponent,
     CustomTabBarComponent,
     CustomTabButtonComponent,
@@ -147,6 +161,8 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomFloatingFooterComponent,
     CustomHeaderComponent,
     CustomImgComponent,
+    CustomInfiniteScrollComponent,
+    CustomInfiniteScrollContentComponent,
     CustomInputComponent,
     CustomInputPasswordToggleComponent,
     CustomItemComponent,
@@ -162,13 +178,18 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomModalComponent,
     CustomPickerComponent,
     CustomPopoverComponent,
+    CustomProgressBarComponent,
     CustomRangeComponent,
     CustomRadioComponent,
     CustomRadioGroupComponent,
+    CustomRefresherComponent,
+    CustomRefresherContentComponent,
     CustomRippleComponent,
     CustomSearchbarComponent,
     CustomSegmentComponent,
     CustomSelectComponent,
+    CustomSkeletonComponent,
+    CustomSpinnerComponent,
     CustomTextareaComponent,
     CustomTabBarComponent,
     CustomTabButtonComponent,

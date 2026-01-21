@@ -1,0 +1,10 @@
+<ion-refresher
+  [disabled]="disabled"
+  [pullFactor]="pullFactor"
+  [pullMin]="pullMin"
+  [pullMax]="pullMax"
+  [class]="refresherClass"
+  (ionRefresh)="refresh.emit($event)"
+>
+  <ng-content></ng-content>
+</ion-refresher>

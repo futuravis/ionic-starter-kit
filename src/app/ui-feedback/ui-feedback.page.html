@@ -1,0 +1,76 @@
+<custom-header collapse="condense">
+  <custom-toolbar>
+    <custom-title>Feedback & State</custom-title>
+  </custom-toolbar>
+</custom-header>
+
+<custom-header>
+  <custom-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <custom-title>Feedback & State</custom-title>
+  </custom-toolbar>
+</custom-header>
+
+<custom-content class="ui-demo-page">
+  <custom-refresher (refresh)="handleRefresh($event)">
+    <custom-refresher-content
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing"
+    ></custom-refresher-content>
+  </custom-refresher>
+
+  <section class="section ion-padding">
+    <div class="section-head">
+      <p class="eyebrow">UI Library</p>
+      <h1 class="app-h1">Feedback & State</h1>
+      <p class="section-subtitle">Progress, spinners, skeletons, and scrolling state helpers.</p>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <div class="section-head">
+      <h2 class="app-h3">Progress</h2>
+      <p class="section-subtitle">Determinate and indeterminate progress bars.</p>
+    </div>
+    <div class="progress-stack">
+      <custom-progress-bar [value]="0.45" color="primary"></custom-progress-bar>
+      <custom-progress-bar [value]="0.7" color="secondary"></custom-progress-bar>
+      <custom-progress-bar type="indeterminate" color="tertiary"></custom-progress-bar>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <div class="section-head">
+      <h2 class="app-h3">Spinners & skeletons</h2>
+      <p class="section-subtitle">Loading indicators and placeholder content.</p>
+    </div>
+    <div class="spinner-row">
+      <custom-spinner name="crescent" color="primary"></custom-spinner>
+      <custom-spinner name="dots" color="secondary"></custom-spinner>
+      <custom-spinner name="lines" color="tertiary"></custom-spinner>
+    </div>
+    <div class="skeleton-card">
+      <custom-skeleton skeletonClass="skeleton-title"></custom-skeleton>
+      <custom-skeleton skeletonClass="skeleton-line"></custom-skeleton>
+      <custom-skeleton skeletonClass="skeleton-line short"></custom-skeleton>
+    </div>
+  </section>
+
+  <section class="section ion-padding">
+    <div class="section-head">
+      <h2 class="app-h3">Infinite scroll</h2>
+      <p class="section-subtitle">Load more items as the list grows.</p>
+    </div>
+    <custom-list listClass="stack">
+      <custom-item lines="full" *ngFor="let item of items">
+        <custom-label>{{ item }}</custom-label>
+      </custom-item>
+    </custom-list>
+    <custom-infinite-scroll (infinite)="loadMore($event)">
+      <custom-infinite-scroll-content loadingSpinner="dots" loadingText="Loading more"></custom-infinite-scroll-content>
+    </custom-infinite-scroll>
+  </section>
+</custom-content>

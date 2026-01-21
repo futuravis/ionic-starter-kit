@@ -1,0 +1,60 @@
+.ui-demo-page {
+  --background: var(--app-bg);
+}
+
+.section {
+  display: grid;
+  gap: 12px;
+}
+
+.section-head {
+  display: grid;
+  gap: 8px;
+}
+
+.section-subtitle {
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.progress-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.spinner-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.skeleton-card {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid var(--app-border);
+  background: var(--app-surface);
+}
+
+.skeleton-title {
+  width: 60%;
+  height: 18px;
+}
+
+.skeleton-line {
+  width: 100%;
+  height: 12px;
+}
+
+.skeleton-line.short {
+  width: 72%;
+}

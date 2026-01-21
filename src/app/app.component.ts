@@ -31,6 +31,7 @@ export class AppComponent {
     { title: 'Lists', url: '/tabs/ui-lists', icon: 'list-outline', subtitle: 'List item variants' },
     { title: 'Data Display', url: '/tabs/ui-data-display', icon: 'image-outline', subtitle: 'Media and accordions' },
     { title: 'Overlays', url: '/tabs/ui-overlays', icon: 'layers-outline', subtitle: 'Alerts, modals, toasts' },
+    { title: 'Feedback & State', url: '/tabs/ui-feedback', icon: 'pulse-outline', subtitle: 'Progress, loading, scroll' },
     { title: 'Chips & Badges', url: '/tabs/ui-chips', icon: 'pricetag-outline', subtitle: 'Metadata tags' },
     { title: 'Avatars', url: '/tabs/ui-avatars', icon: 'person-circle-outline', subtitle: 'Profile visuals' }
   ];

@@ -76,6 +76,10 @@ const routes: Routes = [
         loadChildren: () => import('../ui-overlays/ui-overlays.module').then(m => m.UiOverlaysPageModule)
       },
       {
+        path: 'ui-feedback',
+        loadChildren: () => import('../ui-feedback/ui-feedback.module').then(m => m.UiFeedbackPageModule)
+      },
+      {
         path: 'ui-chips',
         loadChildren: () => import('../ui-chips/ui-chips.module').then(m => m.UiChipsPageModule)
       },

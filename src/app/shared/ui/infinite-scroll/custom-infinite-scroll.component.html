@@ -1,0 +1,9 @@
+<ion-infinite-scroll
+  [disabled]="disabled"
+  [position]="position"
+  [threshold]="threshold"
+  [class]="infiniteClass"
+  (ionInfinite)="infinite.emit($event)"
+>
+  <ng-content></ng-content>
+</ion-infinite-scroll>
