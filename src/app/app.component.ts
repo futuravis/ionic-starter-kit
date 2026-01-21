@@ -13,13 +13,13 @@ export class AppComponent {
   ];
 
   designPages = [
-    { title: 'Design System', url: '/tabs/components', icon: 'sparkles-outline', subtitle: 'Visual design foundation' },
+    { title: 'Config', url: '/tabs/config', icon: 'options-outline', subtitle: 'App configuration' },
     { title: 'Typography', url: '/tabs/typography', icon: 'text-outline', subtitle: 'Text styles & hierarchy' },
     { title: 'Colors & Theming', url: '/tabs/colors', icon: 'color-palette-outline', subtitle: 'Color palette & themes' }
   ];
 
   uiPages = [
-    { title: 'UI Library', url: '/tabs/ui-library', icon: 'layers-outline', subtitle: 'Reusable component demos' },
+    { title: 'Libraries', url: '/tabs/libs', icon: 'layers-outline', subtitle: 'Reusable component demos' },
     { title: 'Layout', url: '/tabs/ui-layout', icon: 'grid-outline', subtitle: 'Headers, toolbars, content' },
     { title: 'Collapsible Header', url: '/tabs/ui-collapsible-header', icon: 'resize-outline', subtitle: 'Silver header pattern' },
     { title: 'Navigation', url: '/tabs/ui-navigation', icon: 'navigate-outline', subtitle: 'Tabs and breadcrumbs' },

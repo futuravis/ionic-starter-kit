@@ -10,72 +10,16 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Home</ion-title>
-    <ion-buttons slot="end">
-      <custom-button-clear ariaLabel="Sparkles">
-        <ion-icon name="sparkles-outline"></ion-icon>
-      </custom-button-clear>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="home-page">
-  <section class="hero ion-padding">
-    <div class="hero-card">
-      <div class="hero-copy">
-        <p class="eyebrow">Ionic Angular Starter</p>
-        <h1 class="display">Build a mobile experience with a bold, token-driven UI.</h1>
-        <p class="lead">This starter kit ships with onboarding, navigation patterns, and a full component gallery to accelerate delivery.</p>
-        <div class="hero-actions">
-          <custom-button routerLink="/tabs/components">Explore Components</custom-button>
-          <custom-button-outline routerLink="/tabs/settings">Open Settings</custom-button-outline>
-        </div>
-      </div>
-      <div class="hero-metric">
-        <div>
-          <p class="metric-label">Ready screens</p>
-          <h2 class="metric-value">04</h2>
-        </div>
-        <div>
-          <p class="metric-label">Token groups</p>
-          <h2 class="metric-value">06</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section ion-padding">
-    <h2 class="section-title">Quick Actions</h2>
-    <div class="quick-actions">
-      <ion-card class="action-card" *ngFor="let action of quickActions">
-        <ion-icon [name]="action.icon" [color]="action.color"></ion-icon>
-        <div>
-          <h3>{{ action.title }}</h3>
-          <p>{{ action.subtitle }}</p>
-        </div>
-      </ion-card>
-    </div>
-  </section>
-
-  <section class="section ion-padding">
-    <h2 class="section-title">Starter Highlights</h2>
-    <div class="feature-grid">
-      <ion-card class="feature-card" *ngFor="let feature of featureCards" [routerLink]="feature.link">
-        <ion-icon [name]="feature.icon"></ion-icon>
-        <h3>{{ feature.title }}</h3>
-        <p>{{ feature.description }}</p>
-      </ion-card>
-    </div>
-  </section>
-
-  <section class="section ion-padding">
-      <ion-card class="cta-card">
-        <ion-card-header>
-          <ion-card-title>Ship your first feature fast</ion-card-title>
-          <ion-card-subtitle>Use tokens, layouts, and component patterns already aligned.</ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-content>
-          <custom-button expand="block" color="secondary" routerLink="/tabs/components">See Component Gallery</custom-button>
-        </ion-card-content>
-      </ion-card>
+  <section class="home-description ion-padding">
+    <p class="eyebrow">Starter Kit</p>
+    <h1 class="app-h1">Build mobile UIs with a clean, reusable component layer.</h1>
+    <p class="app-body-lg">
+      Use the Config tab for design system setup, the Libs tab for reusable UI demos,
+      and Settings to control app behavior.
+    </p>
   </section>
 </ion-content>

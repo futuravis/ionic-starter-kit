@@ -12,6 +12,14 @@ const routes: Routes = [
         loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
       },
       {
+        path: 'config',
+        loadChildren: () => import('../components/components.module').then(m => m.ComponentsPageModule)
+      },
+      {
+        path: 'libs',
+        loadChildren: () => import('../ui-library/ui-library.module').then(m => m.UiLibraryPageModule)
+      },
+      {
         path: 'components',
         loadChildren: () => import('../components/components.module').then(m => m.ComponentsPageModule)
       },

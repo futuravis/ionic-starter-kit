@@ -21,6 +21,13 @@
 
   <custom-list listClass="stack">
     <custom-toggle
+      startIcon="menu-outline"
+      label="Side menu"
+      description="Enable the drawer navigation"
+      [(ngModel)]="menuEnabled"
+      (valueChange)="onMenuToggle($event)"
+    ></custom-toggle>
+    <custom-toggle
       startIcon="notifications-outline"
       label="Notifications"
       description="Push updates and system alerts"

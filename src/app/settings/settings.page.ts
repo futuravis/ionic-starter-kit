@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-settings',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   standalone: false,
 })
 export class SettingsPage implements OnInit {
+  menuEnabled = true;
   notifications = true;
   analytics = false;
   themeMode = 'system';
@@ -18,8 +20,17 @@ export class SettingsPage implements OnInit {
   ];
 
   private readonly themeStorageKey = 'starter-kit-theme';
+  private readonly menuStorageKey = 'starter-kit-menu';
+
+  constructor(private menuController: MenuController) {}
 
   ngOnInit(): void {
+    const savedMenu = localStorage.getItem(this.menuStorageKey);
+    if (savedMenu !== null) {
+      this.menuEnabled = savedMenu === 'true';
+    }
+    this.menuController.enable(this.menuEnabled);
+
     const savedTheme = localStorage.getItem(this.themeStorageKey);
     if (savedTheme) {
       this.themeMode = savedTheme;
@@ -32,6 +43,12 @@ export class SettingsPage implements OnInit {
     this.themeMode = nextMode;
     localStorage.setItem(this.themeStorageKey, nextMode);
     this.applyTheme(nextMode);
+  }
+
+  onMenuToggle(enabled: boolean): void {
+    this.menuEnabled = enabled;
+    localStorage.setItem(this.menuStorageKey, String(enabled));
+    this.menuController.enable(enabled);
   }
 
   private applyTheme(mode: string): void {
