@@ -68,6 +68,10 @@ const routes: Routes = [
         loadChildren: () => import('../ui-lists/ui-lists.module').then(m => m.UiListsPageModule)
       },
       {
+        path: 'ui-data-display',
+        loadChildren: () => import('../ui-data-display/ui-data-display.module').then(m => m.UiDataDisplayPageModule)
+      },
+      {
         path: 'ui-chips',
         loadChildren: () => import('../ui-chips/ui-chips.module').then(m => m.UiChipsPageModule)
       },

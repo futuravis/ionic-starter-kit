@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
+import { CustomAccordionComponent } from './accordion/custom-accordion.component';
+import { CustomAccordionGroupComponent } from './accordion-group/custom-accordion-group.component';
 import { CustomAvatarComponent } from './avatar/custom-avatar.component';
 import { CustomBackButtonComponent } from './back-button/custom-back-button.component';
 import { CustomBadgeComponent } from './badge/custom-badge.component';
@@ -22,6 +24,7 @@ import { CustomFabListComponent } from './fab-list/custom-fab-list.component';
 import { CustomFooterComponent } from './footer/custom-footer.component';
 import { CustomFloatingFooterComponent } from './floating-footer/custom-floating-footer.component';
 import { CustomHeaderComponent } from './header/custom-header.component';
+import { CustomImgComponent } from './img/custom-img.component';
 import { CustomInputComponent } from './input/custom-input.component';
 import { CustomInputPasswordToggleComponent } from './input-password-toggle/custom-input-password-toggle.component';
 import { CustomItemComponent } from './item/custom-item.component';
@@ -44,6 +47,8 @@ import { CustomTextareaComponent } from './textarea/custom-textarea.component';
 import { CustomTabBarComponent } from './tab-bar/custom-tab-bar.component';
 import { CustomTabButtonComponent } from './tab-button/custom-tab-button.component';
 import { CustomTabsComponent } from './tabs/custom-tabs.component';
+import { CustomTextComponent } from './text/custom-text.component';
+import { CustomThumbnailComponent } from './thumbnail/custom-thumbnail.component';
 import { CustomTitleComponent } from './title/custom-title.component';
 import { CustomToggleComponent } from './toggle/custom-toggle.component';
 import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
@@ -51,6 +56,8 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
 @NgModule({
   imports: [CommonModule, RouterModule, IonicModule],
   declarations: [
+    CustomAccordionComponent,
+    CustomAccordionGroupComponent,
     CustomAvatarComponent,
     CustomBackButtonComponent,
     CustomBadgeComponent,
@@ -71,6 +78,7 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomFooterComponent,
     CustomFloatingFooterComponent,
     CustomHeaderComponent,
+    CustomImgComponent,
     CustomInputComponent,
     CustomInputPasswordToggleComponent,
     CustomItemComponent,
@@ -93,11 +101,15 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomTabBarComponent,
     CustomTabButtonComponent,
     CustomTabsComponent,
+    CustomTextComponent,
+    CustomThumbnailComponent,
     CustomTitleComponent,
     CustomToggleComponent,
     CustomToolbarComponent,
   ],
   exports: [
+    CustomAccordionComponent,
+    CustomAccordionGroupComponent,
     CustomAvatarComponent,
     CustomBackButtonComponent,
     CustomBadgeComponent,
@@ -118,6 +130,7 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomFooterComponent,
     CustomFloatingFooterComponent,
     CustomHeaderComponent,
+    CustomImgComponent,
     CustomInputComponent,
     CustomInputPasswordToggleComponent,
     CustomItemComponent,
@@ -140,6 +153,8 @@ import { CustomToolbarComponent } from './toolbar/custom-toolbar.component';
     CustomTabBarComponent,
     CustomTabButtonComponent,
     CustomTabsComponent,
+    CustomTextComponent,
+    CustomThumbnailComponent,
     CustomTitleComponent,
     CustomToggleComponent,
     CustomToolbarComponent,

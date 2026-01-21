@@ -1,0 +1,72 @@
+.ui-demo-page {
+  --background: var(--app-bg);
+}
+
+.section {
+  display: grid;
+  gap: 12px;
+}
+
+.section-head {
+  display: grid;
+  gap: 8px;
+}
+
+.section-subtitle {
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--app-text-muted);
+  margin: 0;
+}
+
+.media-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.media-card {
+  background: var(--app-surface);
+  border: 1px solid var(--app-border);
+  border-radius: 16px;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.media-image {
+  width: 100%;
+  height: 140px;
+  border-radius: 12px;
+  background: var(--app-surface-2);
+  padding: 12px;
+  object-fit: contain;
+}
+
+.media-body {
+  display: grid;
+  gap: 6px;
+}
+
+.accordion-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.accordion-content {
+  display: grid;
+  gap: 12px;
+  padding: 0 16px 16px;
+  color: var(--app-text-muted);
+}
+
+@media (min-width: 720px) {
+  .media-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
