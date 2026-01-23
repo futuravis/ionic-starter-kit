@@ -11,6 +11,16 @@ interface ComponentGroup {
   items: string[];
 }
 
+interface DemoInfo {
+  name: string;
+  group: string;
+  description: string;
+}
+
+interface ScrollDetail {
+  scrollTop: number;
+}
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
@@ -19,6 +29,11 @@ interface ComponentGroup {
 })
 export class HomePage {
   searchQuery = '';
+  isCollapsed = false;
+  demoOpen = false;
+  selectedDemo: DemoInfo | null = null;
+
+  private readonly collapseThreshold = 140;
 
   highlights: Highlight[] = [
     { title: 'Tokenized UI', text: 'Typography and color tokens are wired into screens.', icon: 'color-palette-outline' },
@@ -47,5 +62,26 @@ export class HomePage {
         items: group.items.filter(item => item.toLowerCase().includes(query)),
       }))
       .filter(group => group.items.length > 0);
+  }
+
+  onScroll(event: CustomEvent<ScrollDetail>) {
+    const nextCollapsed = event.detail.scrollTop > this.collapseThreshold;
+    if (this.isCollapsed !== nextCollapsed) {
+      this.isCollapsed = nextCollapsed;
+    }
+  }
+
+  openDemo(group: string, item: string) {
+    this.selectedDemo = {
+      name: item,
+      group,
+      description: `Open the ${item} demo in Libraries > ${group}.`,
+    };
+    this.demoOpen = true;
+  }
+
+  closeDemo() {
+    this.demoOpen = false;
+    this.selectedDemo = null;
   }
 }
