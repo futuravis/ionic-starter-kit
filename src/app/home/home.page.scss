@@ -9,6 +9,10 @@
   --home-toolbar-height: 56px;
 }
 
+:host-context(.ios) {
+  --home-toolbar-height: 44px;
+}
+
 .home-page {
   --background: var(--app-bg);
 }
@@ -34,8 +38,8 @@
 
 .search-toolbar {
   --background: transparent;
-  min-height: var(--home-toolbar-height);
-  padding: 8px 12px;
+  --min-height: var(--home-toolbar-height);
+  padding: 0 12px;
   transition: opacity 0.2s ease;
 }
 
@@ -199,7 +203,7 @@
 
 .sticky-section {
   position: sticky;
-  top: calc(var(--ion-safe-area-top, 0px) + var(--home-toolbar-height));
+  top: -1px;
   z-index: 4;
   background: var(--app-bg);
   border-bottom: 1px solid var(--app-border);
