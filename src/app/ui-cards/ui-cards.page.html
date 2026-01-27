@@ -24,26 +24,44 @@
 
   <section class="section ion-padding">
     <div class="card-grid">
-      <custom-card title="Service Request" subtitle="Open">
-        <p class="card-body">Atlassian - Bitbucket access request for core team.</p>
-        <div class="card-actions">
-          <custom-button size="small">View</custom-button>
-          <custom-button-outline size="small">Assign</custom-button-outline>
-        </div>
-      </custom-card>
-      <custom-card title="Change Request" subtitle="Pending">
-        <p class="card-body">Deploy approval for the staging environment.</p>
-        <div class="card-actions">
-          <custom-button size="small">Approve</custom-button>
-          <custom-button-outline size="small">Details</custom-button-outline>
-        </div>
-      </custom-card>
-      <custom-card title="Incident" subtitle="Investigating">
-        <p class="card-body">Latency spikes detected in the EU cluster.</p>
-        <div class="card-actions">
-          <custom-button size="small">Open</custom-button>
-        </div>
-      </custom-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Service Request</ion-card-title>
+          <ion-card-subtitle>Open</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="card-body">Atlassian - Bitbucket access request for core team.</p>
+          <div class="card-actions">
+            <ion-button size="small">View</ion-button>
+            <ion-button fill="outline" size="small">Assign</ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Change Request</ion-card-title>
+          <ion-card-subtitle>Pending</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="card-body">Deploy approval for the staging environment.</p>
+          <div class="card-actions">
+            <ion-button size="small">Approve</ion-button>
+            <ion-button fill="outline" size="small">Details</ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Incident</ion-card-title>
+          <ion-card-subtitle>Investigating</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="card-body">Latency spikes detected in the EU cluster.</p>
+          <div class="card-actions">
+            <ion-button size="small">Open</ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
     </div>
   </section>
 </ion-content>

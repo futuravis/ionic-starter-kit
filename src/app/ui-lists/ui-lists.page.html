@@ -18,95 +18,110 @@
     <div class="section-head">
       <p class="eyebrow">UI Library</p>
       <h1 class="app-h1">Lists</h1>
-      <p class="section-subtitle">List item wrapper for common list patterns.</p>
+      <p class="section-subtitle">List patterns for common list workflows.</p>
     </div>
   </section>
 
   <section class="section ion-padding">
     <div class="section-head">
-      <h2 class="app-h3">List item wrapper</h2>
-      <p class="section-subtitle">Use the list-item wrapper for standard list rows.</p>
+      <h2 class="app-h3">List item patterns</h2>
+      <p class="section-subtitle">Use ion-item and list headers for standard list rows.</p>
     </div>
-    <custom-list listClass="stack">
-      <custom-list-header>Recent requests</custom-list-header>
-      <custom-list-item
-        title="Service Request"
-        subtitle="Bitbucket access approval"
-        startIcon="clipboard-outline"
-        note="Today"
-        badge="New"
-        badgeColor="primary"
-      ></custom-list-item>
-      <custom-list-item
-        title="Change Request"
-        subtitle="Deploy to staging"
-        startIcon="git-compare-outline"
-        note="Tomorrow"
-        badge="Pending"
-        badgeColor="warning"
-      ></custom-list-item>
-      <custom-list-item
-        title="Incident Review"
-        subtitle="Latency spikes"
-        avatarSrc="assets/avatar.svg"
-        note="Jan 17"
-        endIcon="chevron-forward-outline"
-        [button]="true"
-      ></custom-list-item>
-    </custom-list>
+    <ion-list class="stack">
+      <ion-list-header>Recent requests</ion-list-header>
+      <ion-item lines="full">
+        <ion-icon slot="start" name="clipboard-outline"></ion-icon>
+        <ion-label>
+          <h3>Service Request</h3>
+          <p>Bitbucket access approval</p>
+        </ion-label>
+        <div slot="end" class="end-meta">
+          <ion-badge color="primary">New</ion-badge>
+          <ion-note>Today</ion-note>
+        </div>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-icon slot="start" name="git-compare-outline"></ion-icon>
+        <ion-label>
+          <h3>Change Request</h3>
+          <p>Deploy to staging</p>
+        </ion-label>
+        <div slot="end" class="end-meta">
+          <ion-badge color="warning">Pending</ion-badge>
+          <ion-note>Tomorrow</ion-note>
+        </div>
+      </ion-item>
+      <ion-item lines="full" button="true">
+        <ion-avatar slot="start">
+          <img src="assets/avatar.svg" alt="Avatar" />
+        </ion-avatar>
+        <ion-label>
+          <h3>Incident Review</h3>
+          <p>Latency spikes</p>
+        </ion-label>
+        <ion-note slot="end">Jan 17</ion-note>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+    </ion-list>
   </section>
 
   <section class="section ion-padding">
     <div class="section-head">
       <h2 class="app-h3">Composed rows</h2>
-      <p class="section-subtitle">Assemble lists with custom-item + label + note.</p>
+      <p class="section-subtitle">Assemble lists with ion-item, labels, and notes.</p>
     </div>
-    <custom-list listClass="stack">
-      <custom-item lines="full">
-        <custom-label>
+    <ion-list class="stack">
+      <ion-item lines="full">
+        <ion-label>
           <h3>Assigned to me</h3>
           <p>5 tasks due today</p>
-        </custom-label>
-        <custom-note slot="end">Today</custom-note>
-      </custom-item>
-      <custom-item lines="full" [button]="true" [detail]="true">
-        <custom-label>
+        </ion-label>
+        <ion-note slot="end">Today</ion-note>
+      </ion-item>
+      <ion-item lines="full" button="true">
+        <ion-label>
           <h3>Awaiting approval</h3>
           <p>3 requests need review</p>
-        </custom-label>
+        </ion-label>
         <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
-      </custom-item>
-      <custom-item lines="none" color="light">
-        <custom-label>
+      </ion-item>
+      <ion-item lines="none" color="light">
+        <ion-label>
           <h3>Updates</h3>
           <p>Release notes and changes</p>
-        </custom-label>
-        <custom-note slot="end">New</custom-note>
-      </custom-item>
-    </custom-list>
+        </ion-label>
+        <ion-note slot="end">New</ion-note>
+      </ion-item>
+    </ion-list>
   </section>
 
   <section class="section ion-padding">
     <div class="section-head">
       <h2 class="app-h3">Sliding actions</h2>
-      <p class="section-subtitle">Wrap with custom-item-sliding + item-options.</p>
+      <p class="section-subtitle">Wrap with ion-item-sliding + ion-item-options.</p>
     </div>
-    <custom-list listClass="stack">
-      <custom-item-sliding>
-        <custom-item lines="full">
-          <custom-label>
+    <ion-list class="stack">
+      <ion-item-sliding>
+        <ion-item lines="full">
+          <ion-label>
             <h3>Approve access</h3>
             <p>Swipe to reveal actions</p>
-          </custom-label>
-          <custom-note slot="end">Today</custom-note>
-        </custom-item>
-        <custom-item-options side="start">
-          <custom-item-option color="success" icon="checkmark-circle" label="Approve"></custom-item-option>
-        </custom-item-options>
-        <custom-item-options side="end">
-          <custom-item-option color="danger" icon="trash" label="Delete"></custom-item-option>
-        </custom-item-options>
-      </custom-item-sliding>
-    </custom-list>
+          </ion-label>
+          <ion-note slot="end">Today</ion-note>
+        </ion-item>
+        <ion-item-options side="start">
+          <ion-item-option color="success">
+            <ion-icon slot="icon-only" name="checkmark-circle"></ion-icon>
+            Approve
+          </ion-item-option>
+        </ion-item-options>
+        <ion-item-options side="end">
+          <ion-item-option color="danger">
+            <ion-icon slot="icon-only" name="trash"></ion-icon>
+            Delete
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
   </section>
 </ion-content>

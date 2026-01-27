@@ -25,17 +25,27 @@
   <section class="section ion-padding">
     <h2 class="app-h2">Images</h2>
     <div class="row">
-      <custom-avatar src="assets/avatar.svg" alt="Profile avatar"></custom-avatar>
-      <custom-avatar src="assets/avatar.svg" alt="Profile avatar" avatarClass="avatar-lg"></custom-avatar>
+      <ion-avatar>
+        <img src="assets/avatar.svg" alt="Profile avatar" />
+      </ion-avatar>
+      <ion-avatar class="avatar-lg">
+        <img src="assets/avatar.svg" alt="Profile avatar" />
+      </ion-avatar>
     </div>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Initials</h2>
     <div class="row">
-      <custom-avatar initials="RS"></custom-avatar>
-      <custom-avatar initials="UI" avatarClass="avatar-lg"></custom-avatar>
-      <custom-avatar initials="SM" avatarClass="avatar-sm"></custom-avatar>
+      <ion-avatar>
+        <span class="avatar-initials">RS</span>
+      </ion-avatar>
+      <ion-avatar class="avatar-lg">
+        <span class="avatar-initials">UI</span>
+      </ion-avatar>
+      <ion-avatar class="avatar-sm">
+        <span class="avatar-initials">SM</span>
+      </ion-avatar>
     </div>
   </section>
 </ion-content>

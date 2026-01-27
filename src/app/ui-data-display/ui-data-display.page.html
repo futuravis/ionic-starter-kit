@@ -18,28 +18,28 @@
     <div class="section-head">
       <p class="eyebrow">UI Library</p>
       <h1 class="app-h1">Data Display</h1>
-      <p class="section-subtitle">Media, text, and accordion wrappers for content-heavy screens.</p>
+      <p class="section-subtitle">Media, text, and accordions for content-heavy screens.</p>
     </div>
   </section>
 
   <section class="section ion-padding">
     <div class="section-head">
       <h2 class="app-h3">Media blocks</h2>
-      <p class="section-subtitle">Use custom-img and custom-text to highlight media.</p>
+      <p class="section-subtitle">Use ion-img and ion-text to highlight media.</p>
     </div>
     <div class="media-grid">
       <div class="media-card">
-        <custom-img src="assets/illustrations/intro-1.svg" alt="Intro" imgClass="media-image"></custom-img>
+        <ion-img src="assets/illustrations/intro-1.svg" alt="Intro" class="media-image"></ion-img>
         <div class="media-body">
-          <custom-text color="primary" textClass="eyebrow">Featured</custom-text>
+          <ion-text color="primary" class="eyebrow">Featured</ion-text>
           <h3 class="app-h3">Intro flows</h3>
           <p class="app-body-sm">Showcase onboarding or highlights with a simple media block.</p>
         </div>
       </div>
       <div class="media-card">
-        <custom-img src="assets/illustrations/intro-2.svg" alt="Tasks" imgClass="media-image"></custom-img>
+        <ion-img src="assets/illustrations/intro-2.svg" alt="Tasks" class="media-image"></ion-img>
         <div class="media-body">
-          <custom-text color="secondary" textClass="eyebrow">Updates</custom-text>
+          <ion-text color="secondary" class="eyebrow">Updates</ion-text>
           <h3 class="app-h3">Task updates</h3>
           <p class="app-body-sm">Pair short summaries with illustrations for quick scanning.</p>
         </div>
@@ -50,58 +50,62 @@
   <section class="section ion-padding">
     <div class="section-head">
       <h2 class="app-h3">Thumbnail rows</h2>
-      <p class="section-subtitle">Combine custom-thumbnail + custom-item for list media.</p>
+      <p class="section-subtitle">Combine ion-thumbnail + ion-item for list media.</p>
     </div>
-    <custom-list listClass="stack">
-      <custom-item lines="full">
-        <custom-thumbnail slot="start" src="assets/avatar.svg" alt="Profile"></custom-thumbnail>
-        <custom-label>
+    <ion-list class="stack">
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="assets/avatar.svg" alt="Profile" />
+        </ion-thumbnail>
+        <ion-label>
           <h3>Assigned to Olivia</h3>
           <p>Service request awaiting approval</p>
-        </custom-label>
-        <custom-note slot="end">12m</custom-note>
-      </custom-item>
-      <custom-item lines="full">
-        <custom-thumbnail slot="start" src="assets/illustrations/intro-3.svg" alt="Illustration"></custom-thumbnail>
-        <custom-label>
+        </ion-label>
+        <ion-note slot="end">12m</ion-note>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="assets/illustrations/intro-3.svg" alt="Illustration" />
+        </ion-thumbnail>
+        <ion-label>
           <h3>Weekly rollout</h3>
           <p>New deployment plan ready</p>
-        </custom-label>
-        <custom-note slot="end">1h</custom-note>
-      </custom-item>
-    </custom-list>
+        </ion-label>
+        <ion-note slot="end">1h</ion-note>
+      </ion-item>
+    </ion-list>
   </section>
 
   <section class="section ion-padding">
     <div class="section-head">
       <h2 class="app-h3">Accordions</h2>
-      <p class="section-subtitle">Group collapsible content with custom-accordion-group.</p>
+      <p class="section-subtitle">Group collapsible content with ion-accordion-group.</p>
     </div>
-    <custom-accordion-group expand="compact" groupClass="accordion-stack">
-      <custom-accordion value="guides">
-        <custom-item slot="header" lines="full">
-          <custom-label>
+    <ion-accordion-group class="accordion-stack">
+      <ion-accordion value="guides">
+        <ion-item slot="header" lines="full">
+          <ion-label>
             <h3>Guides</h3>
             <p>Onboarding and help content</p>
-          </custom-label>
-        </custom-item>
+          </ion-label>
+        </ion-item>
         <div slot="content" class="accordion-content">
           <p class="app-body-sm">Start here for setup steps, onboarding, and FAQs.</p>
-          <custom-button size="small">Open guide</custom-button>
+          <ion-button size="small">Open guide</ion-button>
         </div>
-      </custom-accordion>
-      <custom-accordion value="updates">
-        <custom-item slot="header" lines="full">
-          <custom-label>
+      </ion-accordion>
+      <ion-accordion value="updates">
+        <ion-item slot="header" lines="full">
+          <ion-label>
             <h3>Release notes</h3>
             <p>Latest product updates</p>
-          </custom-label>
-        </custom-item>
+          </ion-label>
+        </ion-item>
         <div slot="content" class="accordion-content">
           <p class="app-body-sm">See what changed in the newest release.</p>
-          <custom-button-outline size="small">View notes</custom-button-outline>
+          <ion-button fill="outline" size="small">View notes</ion-button>
         </div>
-      </custom-accordion>
-    </custom-accordion-group>
+      </ion-accordion>
+    </ion-accordion-group>
   </section>
 </ion-content>

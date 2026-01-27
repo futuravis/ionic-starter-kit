@@ -18,113 +18,149 @@
     <div class="section-head">
       <p class="eyebrow">UI Library</p>
       <h1 class="app-h1">Inputs</h1>
-      <p class="section-subtitle">Field wrappers with labels, helper text, and error states.</p>
+      <p class="section-subtitle">Ionic form controls with labels, helper text, and error states.</p>
     </div>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Text fields</h2>
     <div class="stack">
-      <custom-input
+      <ion-input
         label="Project name"
+        labelPlacement="stacked"
         placeholder="Starter kit"
         [helperText]="helper"
         [(ngModel)]="projectName"
-      ></custom-input>
-      <custom-input
+      ></ion-input>
+      <ion-input
         label="Owner email"
+        labelPlacement="stacked"
         type="email"
         placeholder="name@company.com"
         [(ngModel)]="ownerEmail"
-      ></custom-input>
-      <custom-input label="Password" type="password" [(ngModel)]="password">
-        <custom-input-password-toggle></custom-input-password-toggle>
-      </custom-input>
-      <custom-input
+      ></ion-input>
+      <ion-input
+        label="Password"
+        labelPlacement="stacked"
+        type="password"
+        [(ngModel)]="password"
+      >
+        <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+      </ion-input>
+      <ion-input
         label="Description"
+        labelPlacement="stacked"
         placeholder="Short summary"
         [(ngModel)]="description"
-      ></custom-input>
-      <custom-input
+      ></ion-input>
+      <ion-input
+        class="ion-invalid ion-touched"
         label="Status"
+        labelPlacement="stacked"
         placeholder="Required field"
         [errorText]="error"
         [(ngModel)]="status"
-      ></custom-input>
+      ></ion-input>
     </div>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Search</h2>
-    <custom-searchbar placeholder="Search tasks" [(ngModel)]="searchQuery"></custom-searchbar>
+    <ion-searchbar placeholder="Search tasks" [(ngModel)]="searchQuery"></ion-searchbar>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Checkboxes</h2>
     <div class="stack">
-      <custom-checkbox
-        label="Email alerts"
-        description="Get notifications about updates"
-        [(ngModel)]="emailAlerts"
-      ></custom-checkbox>
-      <custom-checkbox
-        label="Marketing opt-in"
-        description="Share product updates"
-        [(ngModel)]="marketingOptIn"
-      ></custom-checkbox>
+      <ion-item>
+        <ion-checkbox slot="start" [(ngModel)]="emailAlerts"></ion-checkbox>
+        <ion-label>
+          <h3>Email alerts</h3>
+          <p>Get notifications about updates</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox slot="start" [(ngModel)]="marketingOptIn"></ion-checkbox>
+        <ion-label>
+          <h3>Marketing opt-in</h3>
+          <p>Share product updates</p>
+        </ion-label>
+      </ion-item>
     </div>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Radio group</h2>
-    <custom-radio-group [(ngModel)]="radioChoice">
-      <custom-radio label="Standard" description="Balanced defaults" value="standard"></custom-radio>
-      <custom-radio label="Compact" description="Dense spacing" value="compact"></custom-radio>
-      <custom-radio label="Comfortable" description="More breathing room" value="comfortable"></custom-radio>
-    </custom-radio-group>
+    <ion-radio-group [(ngModel)]="radioChoice">
+      <ion-item>
+        <ion-radio slot="start" value="standard"></ion-radio>
+        <ion-label>
+          <h3>Standard</h3>
+          <p>Balanced defaults</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-radio slot="start" value="compact"></ion-radio>
+        <ion-label>
+          <h3>Compact</h3>
+          <p>Dense spacing</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-radio slot="start" value="comfortable"></ion-radio>
+        <ion-label>
+          <h3>Comfortable</h3>
+          <p>More breathing room</p>
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Datetime</h2>
-    <custom-datetime
-      label="Due date"
-      presentation="date"
-      [(ngModel)]="dueDate"
-    ></custom-datetime>
+    <ion-item lines="none">
+      <ion-label position="stacked">Due date</ion-label>
+      <ion-datetime presentation="date" [(ngModel)]="dueDate"></ion-datetime>
+    </ion-item>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Textareas</h2>
     <div class="stack">
-      <custom-textarea
+      <ion-textarea
         label="Notes"
+        labelPlacement="stacked"
         placeholder="Add context for the team"
         [helperText]="textareaHelp"
         [(ngModel)]="notes"
-      ></custom-textarea>
-      <custom-textarea
+      ></ion-textarea>
+      <ion-textarea
+        class="ion-invalid ion-touched"
         label="Blocked reason"
+        labelPlacement="stacked"
         placeholder="Required"
         [errorText]="textareaError"
         [(ngModel)]="blockedReason"
-      ></custom-textarea>
+      ></ion-textarea>
     </div>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Selects</h2>
     <div class="stack">
-      <custom-select
+      <ion-select
         label="Priority"
+        labelPlacement="stacked"
         placeholder="Pick one"
         [(ngModel)]="priority"
       >
         <ion-select-option value="low">Low</ion-select-option>
         <ion-select-option value="normal">Normal</ion-select-option>
         <ion-select-option value="high">High</ion-select-option>
-      </custom-select>
-      <custom-select
+      </ion-select>
+      <ion-select
         label="Assignees"
+        labelPlacement="stacked"
         placeholder="Select multiple"
         [multiple]="true"
         [(ngModel)]="assignees"
@@ -132,41 +168,52 @@
         <ion-select-option value="rusu">Rusu</ion-select-option>
         <ion-select-option value="sam">Sam</ion-select-option>
         <ion-select-option value="taylor">Taylor</ion-select-option>
-      </custom-select>
+      </ion-select>
     </div>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Toggles</h2>
     <div class="stack">
-      <custom-toggle label="Notify watchers" [(ngModel)]="notifyWatchers"></custom-toggle>
-      <custom-toggle label="Mark as urgent" color="warning" [(ngModel)]="urgent"></custom-toggle>
+      <ion-item>
+        <ion-label>Notify watchers</ion-label>
+        <ion-toggle slot="end" [(ngModel)]="notifyWatchers"></ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-label>Mark as urgent</ion-label>
+        <ion-toggle slot="end" color="warning" [(ngModel)]="urgent"></ion-toggle>
+      </ion-item>
     </div>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Segments</h2>
-    <custom-segment [options]="segmentOptions" [(ngModel)]="segmentValue"></custom-segment>
+    <ion-segment [(ngModel)]="segmentValue">
+      <ion-segment-button *ngFor="let option of segmentOptions" [value]="option.value">
+        <ion-icon [name]="option.icon"></ion-icon>
+        <ion-label>{{ option.label }}</ion-label>
+      </ion-segment-button>
+    </ion-segment>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Range</h2>
-    <custom-range
+    <ion-range
       label="Text scale"
-      labelPosition="stacked"
+      labelPlacement="stacked"
       [min]="0.8"
       [max]="1.4"
       [step]="0.1"
       [snaps]="true"
       [(ngModel)]="rangeValue"
-    ></custom-range>
+    ></ion-range>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">States</h2>
     <div class="stack">
-      <custom-input label="Disabled" placeholder="Not editable" [disabled]="true"></custom-input>
-      <custom-input label="Read only" placeholder="Read only" [readonly]="true" value="Locked"></custom-input>
+      <ion-input label="Disabled" labelPlacement="stacked" placeholder="Not editable" [disabled]="true"></ion-input>
+      <ion-input label="Read only" labelPlacement="stacked" placeholder="Read only" [readonly]="true" value="Locked"></ion-input>
     </div>
   </section>
 </ion-content>

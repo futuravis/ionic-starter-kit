@@ -18,18 +18,18 @@
     <div class="section-head">
       <p class="eyebrow">UI Library</p>
       <h1 class="app-h1">Overlays</h1>
-      <p class="section-subtitle">Alerts, sheets, toasts, and modals with reusable wrappers.</p>
+      <p class="section-subtitle">Alerts, sheets, toasts, and modals using Ionic overlays.</p>
     </div>
   </section>
 
   <section class="section ion-padding">
     <div class="section-head">
       <h2 class="app-h3">Alerts & sheets</h2>
-      <p class="section-subtitle">Use custom-alert and custom-action-sheet for confirmations.</p>
+      <p class="section-subtitle">Use ion-alert and ion-action-sheet for confirmations.</p>
     </div>
     <div class="button-row">
-      <custom-button (click)="isAlertOpen = true">Open alert</custom-button>
-      <custom-button-outline (click)="isActionSheetOpen = true">Open action sheet</custom-button-outline>
+      <ion-button (click)="isAlertOpen = true">Open alert</ion-button>
+      <ion-button fill="outline" (click)="isActionSheetOpen = true">Open action sheet</ion-button>
     </div>
   </section>
 
@@ -39,8 +39,8 @@
       <p class="section-subtitle">Transient feedback for quick updates.</p>
     </div>
     <div class="button-row">
-      <custom-button (click)="isToastOpen = true">Show toast</custom-button>
-      <custom-button-outline (click)="openLoading()">Show loading</custom-button-outline>
+      <ion-button (click)="isToastOpen = true">Show toast</ion-button>
+      <ion-button fill="outline" (click)="openLoading()">Show loading</ion-button>
     </div>
   </section>
 
@@ -50,8 +50,8 @@
       <p class="section-subtitle">Layer in tasks without losing context.</p>
     </div>
     <div class="button-row">
-      <custom-button (click)="isModalOpen = true">Open modal</custom-button>
-      <custom-button-outline (click)="openPopover($event)">Open popover</custom-button-outline>
+      <ion-button (click)="isModalOpen = true">Open modal</ion-button>
+      <ion-button fill="outline" (click)="openPopover($event)">Open popover</ion-button>
     </div>
   </section>
 
@@ -61,44 +61,44 @@
       <p class="section-subtitle">Compact selection for mobile workflows.</p>
     </div>
     <div class="button-row">
-      <custom-button (click)="isPickerOpen = true">Pick priority</custom-button>
-      <custom-text textClass="selection-text">Selected: {{ selectedPriority }}</custom-text>
+      <ion-button (click)="openPicker()">Pick priority</ion-button>
+      <ion-text class="selection-text">Selected: {{ selectedPriority }}</ion-text>
     </div>
   </section>
 
-  <custom-alert
+  <ion-alert
     [isOpen]="isAlertOpen"
     header="Confirm assignment"
     message="Assign this request to yourself?"
     [buttons]="alertButtons"
     (didDismiss)="isAlertOpen = false"
-  ></custom-alert>
+  ></ion-alert>
 
-  <custom-action-sheet
+  <ion-action-sheet
     [isOpen]="isActionSheetOpen"
     header="Quick actions"
     [buttons]="actionSheetButtons"
     (didDismiss)="isActionSheetOpen = false"
-  ></custom-action-sheet>
+  ></ion-action-sheet>
 
-  <custom-toast
+  <ion-toast
     [isOpen]="isToastOpen"
     message="Request updated"
     color="primary"
     [duration]="2000"
     [buttons]="toastButtons"
     (didDismiss)="isToastOpen = false"
-  ></custom-toast>
+  ></ion-toast>
 
-  <custom-loading
+  <ion-loading
     [isOpen]="isLoadingOpen"
     message="Syncing data"
     spinner="crescent"
     [duration]="1200"
     (didDismiss)="isLoadingOpen = false"
-  ></custom-loading>
+  ></ion-loading>
 
-  <custom-modal
+  <ion-modal
     [isOpen]="isModalOpen"
     [breakpoints]="[0, 0.4, 0.8]"
     [initialBreakpoint]="0.4"
@@ -109,21 +109,21 @@
         <ion-toolbar>
           <ion-title>Quick filters</ion-title>
           <ion-buttons slot="end">
-            <custom-button-clear (click)="isModalOpen = false">Close</custom-button-clear>
+            <ion-button fill="clear" (click)="isModalOpen = false">Close</ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
       <ion-content class="modal-content">
         <p class="app-body-sm">Apply common filters without leaving the list view.</p>
         <div class="button-row">
-          <custom-button size="small" (click)="isModalOpen = false">Apply</custom-button>
-          <custom-button-outline size="small" (click)="isModalOpen = false">Reset</custom-button-outline>
+          <ion-button size="small" (click)="isModalOpen = false">Apply</ion-button>
+          <ion-button fill="outline" size="small" (click)="isModalOpen = false">Reset</ion-button>
         </div>
       </ion-content>
     </ng-template>
-  </custom-modal>
+  </ion-modal>
 
-  <custom-popover
+  <ion-popover
     [isOpen]="isPopoverOpen"
     [event]="popoverEvent"
     side="bottom"
@@ -131,21 +131,16 @@
     (didDismiss)="isPopoverOpen = false"
   >
     <ng-template>
-      <custom-list listClass="popover-list">
-        <custom-item lines="full" [button]="true">
-          <custom-label>Sort by date</custom-label>
-        </custom-item>
-        <custom-item lines="full" [button]="true">
-          <custom-label>Sort by priority</custom-label>
-        </custom-item>
-      </custom-list>
+      <ion-list class="popover-list">
+        <ion-item lines="full" button="true">
+          <ion-label>Sort by date</ion-label>
+        </ion-item>
+        <ion-item lines="full" button="true">
+          <ion-label>Sort by priority</ion-label>
+        </ion-item>
+      </ion-list>
     </ng-template>
-  </custom-popover>
+  </ion-popover>
 
-  <custom-picker
-    [isOpen]="isPickerOpen"
-    [columns]="pickerColumns"
-    [buttons]="pickerButtons"
-    (didDismiss)="isPickerOpen = false"
-  ></custom-picker>
+  
 </ion-content>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PickerController } from '@ionic/angular';
 import type { ActionSheetButton, AlertButton, PickerButton, PickerColumn, ToastButton } from '@ionic/angular';
 
 @Component({
@@ -8,13 +9,14 @@ import type { ActionSheetButton, AlertButton, PickerButton, PickerColumn, ToastB
   standalone: false,
 })
 export class UiOverlaysPage {
+  constructor(private pickerController: PickerController) {}
+
   isAlertOpen = false;
   isActionSheetOpen = false;
   isToastOpen = false;
   isLoadingOpen = false;
   isModalOpen = false;
   isPopoverOpen = false;
-  isPickerOpen = false;
   popoverEvent?: Event;
 
   selectedPriority = 'Balanced';
@@ -56,6 +58,15 @@ export class UiOverlaysPage {
       },
     },
   ];
+
+  async openPicker(): Promise<void> {
+    const picker = await this.pickerController.create({
+      columns: this.pickerColumns,
+      buttons: this.pickerButtons,
+    });
+    await picker.present();
+  }
+
 
   openPopover(event: Event): void {
     this.popoverEvent = event;

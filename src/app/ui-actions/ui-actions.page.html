@@ -17,49 +17,55 @@
   <section class="section ion-padding">
     <div class="section-head">
       <p class="eyebrow">UI Library</p>
-      <h1 class="app-h1">Action wrappers</h1>
+      <h1 class="app-h1">Actions</h1>
       <p class="section-subtitle">Floating action buttons, ripples, and floating footers.</p>
     </div>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Floating action button</h2>
-    <custom-card>
-      <div class="fab-preview">
-        <custom-fab horizontal="end" vertical="center">
-          <custom-fab-button ariaLabel="Add">
-            <ion-icon name="add"></ion-icon>
-          </custom-fab-button>
-          <custom-fab-list side="top">
-            <custom-fab-button color="secondary" ariaLabel="Edit">
-              <ion-icon name="create-outline"></ion-icon>
-            </custom-fab-button>
-            <custom-fab-button color="tertiary" ariaLabel="Share">
-              <ion-icon name="share-outline"></ion-icon>
-            </custom-fab-button>
-          </custom-fab-list>
-        </custom-fab>
-      </div>
-    </custom-card>
+    <ion-card>
+      <ion-card-content>
+        <div class="fab-preview">
+          <ion-fab horizontal="end" vertical="center">
+            <ion-fab-button aria-label="Add">
+              <ion-icon name="add"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-list side="top">
+              <ion-fab-button color="secondary" aria-label="Edit">
+                <ion-icon name="create-outline"></ion-icon>
+              </ion-fab-button>
+              <ion-fab-button color="tertiary" aria-label="Share">
+                <ion-icon name="share-outline"></ion-icon>
+              </ion-fab-button>
+            </ion-fab-list>
+          </ion-fab>
+        </div>
+      </ion-card-content>
+    </ion-card>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Ripple</h2>
-    <custom-card>
-      <div class="ripple-demo">
-        <span>Tap area</span>
-        <custom-ripple></custom-ripple>
-      </div>
-    </custom-card>
+    <ion-card>
+      <ion-card-content>
+        <div class="ripple-demo">
+          <span>Tap area</span>
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+      </ion-card-content>
+    </ion-card>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Floating footer</h2>
-    <custom-floating-footer>
-      <div class="footer-actions">
-        <custom-button-outline size="small">Secondary</custom-button-outline>
-        <custom-button>Primary action</custom-button>
+    <div class="floating-footer">
+      <div class="floating-footer__inner">
+        <div class="footer-actions">
+          <ion-button fill="outline" size="small">Secondary</ion-button>
+          <ion-button>Primary action</ion-button>
+        </div>
       </div>
-    </custom-floating-footer>
+    </div>
   </section>
 </ion-content>

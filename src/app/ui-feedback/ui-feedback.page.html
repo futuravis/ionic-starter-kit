@@ -14,13 +14,13 @@
 </ion-header>
 
 <ion-content class="ui-demo-page">
-  <custom-refresher (refresh)="handleRefresh($event)">
-    <custom-refresher-content
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content
       pullingText="Pull to refresh"
       refreshingSpinner="circles"
       refreshingText="Refreshing"
-    ></custom-refresher-content>
-  </custom-refresher>
+    ></ion-refresher-content>
+  </ion-refresher>
 
   <section class="section ion-padding">
     <div class="section-head">
@@ -36,9 +36,9 @@
       <p class="section-subtitle">Determinate and indeterminate progress bars.</p>
     </div>
     <div class="progress-stack">
-      <custom-progress-bar [value]="0.45" color="primary"></custom-progress-bar>
-      <custom-progress-bar [value]="0.7" color="secondary"></custom-progress-bar>
-      <custom-progress-bar type="indeterminate" color="tertiary"></custom-progress-bar>
+      <ion-progress-bar [value]="0.45" color="primary"></ion-progress-bar>
+      <ion-progress-bar [value]="0.7" color="secondary"></ion-progress-bar>
+      <ion-progress-bar type="indeterminate" color="tertiary"></ion-progress-bar>
     </div>
   </section>
 
@@ -48,14 +48,14 @@
       <p class="section-subtitle">Loading indicators and placeholder content.</p>
     </div>
     <div class="spinner-row">
-      <custom-spinner name="crescent" color="primary"></custom-spinner>
-      <custom-spinner name="dots" color="secondary"></custom-spinner>
-      <custom-spinner name="lines" color="tertiary"></custom-spinner>
+      <ion-spinner name="crescent" color="primary"></ion-spinner>
+      <ion-spinner name="dots" color="secondary"></ion-spinner>
+      <ion-spinner name="lines" color="tertiary"></ion-spinner>
     </div>
     <div class="skeleton-card">
-      <custom-skeleton skeletonClass="skeleton-title"></custom-skeleton>
-      <custom-skeleton skeletonClass="skeleton-line"></custom-skeleton>
-      <custom-skeleton skeletonClass="skeleton-line short"></custom-skeleton>
+      <ion-skeleton-text class="skeleton-title"></ion-skeleton-text>
+      <ion-skeleton-text class="skeleton-line"></ion-skeleton-text>
+      <ion-skeleton-text class="skeleton-line short"></ion-skeleton-text>
     </div>
   </section>
 
@@ -64,13 +64,13 @@
       <h2 class="app-h3">Infinite scroll</h2>
       <p class="section-subtitle">Load more items as the list grows.</p>
     </div>
-    <custom-list listClass="stack">
-      <custom-item lines="full" *ngFor="let item of items">
-        <custom-label>{{ item }}</custom-label>
-      </custom-item>
-    </custom-list>
-    <custom-infinite-scroll (infinite)="loadMore($event)">
-      <custom-infinite-scroll-content loadingSpinner="dots" loadingText="Loading more"></custom-infinite-scroll-content>
-    </custom-infinite-scroll>
+    <ion-list class="stack">
+      <ion-item lines="full" *ngFor="let item of items">
+        <ion-label>{{ item }}</ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+      <ion-infinite-scroll-content loadingSpinner="dots" loadingText="Loading more"></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
   </section>
 </ion-content>

@@ -14,9 +14,9 @@ export class SettingsPage implements OnInit {
   themeMode = 'system';
   textScale = 1;
   themeOptions = [
-    { value: 'system', label: 'System' },
-    { value: 'light', label: 'Light' },
-    { value: 'dark', label: 'Dark' },
+    { value: 'system', label: 'System', icon: 'desktop-outline' },
+    { value: 'light', label: 'Light', icon: 'sunny-outline' },
+    { value: 'dark', label: 'Dark', icon: 'moon-outline' },
   ];
 
   private readonly themeStorageKey = 'starter-kit-theme';

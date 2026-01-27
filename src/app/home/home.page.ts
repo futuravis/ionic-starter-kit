@@ -37,17 +37,17 @@ export class HomePage {
 
   highlights: Highlight[] = [
     { title: 'Tokenized UI', text: 'Typography and color tokens are wired into screens.', icon: 'color-palette-outline' },
-    { title: 'Reusable layer', text: 'Shared UI wrappers keep styles and behavior consistent.', icon: 'layers-outline' },
+    { title: 'Ionic-first UI', text: 'Ionic components plus global tokens keep styles consistent.', icon: 'layers-outline' },
     { title: 'Pattern demos', text: 'UI Library pages document core building blocks.', icon: 'albums-outline' },
   ];
 
   componentGroups: ComponentGroup[] = [
-    { group: 'Buttons & Actions', items: ['custom-button', 'custom-button-outline', 'custom-button-clear', 'custom-fab', 'custom-fab-button', 'custom-fab-list', 'custom-ripple', 'custom-floating-footer'] },
-    { group: 'Inputs', items: ['custom-input', 'custom-textarea', 'custom-select', 'custom-searchbar', 'custom-toggle', 'custom-checkbox', 'custom-radio-group', 'custom-radio', 'custom-datetime', 'custom-input-password-toggle'] },
-    { group: 'Lists', items: ['custom-list', 'custom-list-header', 'custom-item', 'custom-item-sliding', 'custom-item-options', 'custom-item-option', 'custom-note', 'custom-list-item'] },
-    { group: 'Media & Cards', items: ['custom-card', 'custom-avatar', 'custom-thumbnail', 'custom-text', 'custom-img', 'custom-accordion-group', 'custom-accordion'] },
-    { group: 'Overlays', items: ['custom-alert', 'custom-action-sheet', 'custom-modal', 'custom-popover', 'custom-toast', 'custom-loading', 'custom-picker'] },
-    { group: 'Feedback & State', items: ['custom-progress-bar', 'custom-spinner', 'custom-skeleton', 'custom-refresher', 'custom-refresher-content', 'custom-infinite-scroll', 'custom-infinite-scroll-content'] },
+    { group: 'Buttons & Actions', items: ['ion-button', 'ion-icon', 'ion-fab', 'ion-fab-button', 'ion-fab-list', 'ion-chip', 'ion-ripple-effect'] },
+    { group: 'Inputs', items: ['ion-input', 'ion-textarea', 'ion-select', 'ion-searchbar', 'ion-toggle', 'ion-checkbox', 'ion-radio-group', 'ion-radio', 'ion-datetime', 'ion-input-password-toggle', 'ion-segment', 'ion-range'] },
+    { group: 'Lists', items: ['ion-list', 'ion-list-header', 'ion-item', 'ion-item-sliding', 'ion-item-options', 'ion-item-option', 'ion-label', 'ion-note'] },
+    { group: 'Media & Cards', items: ['ion-card', 'ion-card-header', 'ion-card-title', 'ion-card-subtitle', 'ion-card-content', 'ion-avatar', 'ion-thumbnail', 'ion-text', 'ion-img', 'ion-accordion-group', 'ion-accordion'] },
+    { group: 'Overlays', items: ['ion-alert', 'ion-action-sheet', 'ion-modal', 'ion-popover', 'ion-toast', 'ion-loading', 'ion-picker'] },
+    { group: 'Feedback & State', items: ['ion-progress-bar', 'ion-spinner', 'ion-skeleton-text', 'ion-refresher', 'ion-refresher-content', 'ion-infinite-scroll', 'ion-infinite-scroll-content'] },
   ];
 
   get filteredGroups(): ComponentGroup[] {

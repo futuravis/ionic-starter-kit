@@ -29,3 +29,10 @@
   display: grid;
   gap: 10px;
 }
+
+.end-meta {
+  display: grid;
+  gap: 4px;
+  justify-items: end;
+  text-align: right;
+}

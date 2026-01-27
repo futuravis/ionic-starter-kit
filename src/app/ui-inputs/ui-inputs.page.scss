@@ -29,3 +29,16 @@
   display: grid;
   gap: 12px;
 }
+
+.ui-demo-page ion-input,
+.ui-demo-page ion-textarea,
+.ui-demo-page ion-select,
+.ui-demo-page ion-searchbar,
+.ui-demo-page ion-range {
+  --background: var(--app-surface);
+}
+
+.ui-demo-page ion-radio-group {
+  display: grid;
+  gap: 8px;
+}

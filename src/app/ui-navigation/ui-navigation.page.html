@@ -17,32 +17,39 @@
   <section class="section ion-padding">
     <div class="section-head">
       <p class="eyebrow">UI Library</p>
-      <h1 class="app-h1">Navigation wrappers</h1>
-      <p class="section-subtitle">Back buttons, breadcrumbs, and tab bar wrappers.</p>
+      <h1 class="app-h1">Navigation patterns</h1>
+      <p class="section-subtitle">Back buttons, breadcrumbs, and tab bars.</p>
     </div>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Navigation patterns</h2>
-    <custom-card>
-      <p class="app-body-sm">Back buttons and tabs are the primary navigation primitives in this starter kit.</p>
-    </custom-card>
+    <ion-card>
+      <ion-card-content>
+        <p class="app-body-sm">Back buttons and tabs are the primary navigation primitives in this starter kit.</p>
+      </ion-card-content>
+    </ion-card>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Back button</h2>
-    <custom-card>
-      <ion-toolbar>
-        <custom-back-button defaultHref="/tabs/home"></custom-back-button>
-        <ion-title>Detail view</ion-title>
-      </ion-toolbar>
-    </custom-card>
+    <ion-card>
+      <ion-card-content>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="/tabs/home"></ion-back-button>
+          </ion-buttons>
+          <ion-title>Detail view</ion-title>
+        </ion-toolbar>
+      </ion-card-content>
+    </ion-card>
   </section>
 
   <section class="section ion-padding">
     <h2 class="app-h2">Tabs</h2>
-    <custom-card>
-      <pre class="code-block"><code>&lt;ion-tabs&gt;
+    <ion-card>
+      <ion-card-content>
+        <pre class="code-block"><code>&lt;ion-tabs&gt;
   &lt;ion-tab-bar slot="bottom"&gt;
     &lt;ion-tab-button tab="home" href="/tabs/home"&gt;
       &lt;ion-icon name="home-outline"&gt;&lt;/ion-icon&gt;
@@ -54,6 +61,7 @@
     &lt;/ion-tab-button&gt;
   &lt;/ion-tab-bar&gt;
 &lt;/ion-tabs&gt;</code></pre>
-    </custom-card>
+      </ion-card-content>
+    </ion-card>
   </section>
 </ion-content>

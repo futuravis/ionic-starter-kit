@@ -1,28 +1,63 @@
-<custom-collapsible-header
-  title="Inbox"
-  (searchClick)="onSearch()"
-  (filterClick)="onFilter()"
->
-  <div expanded-content>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Inbox</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" aria-label="Search" (click)="onSearch()">
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear" aria-label="Filter" (click)="onFilter()">
+        <ion-icon name="options-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ui-demo-page" [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Inbox</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <section class="section ion-padding">
     <p class="eyebrow">Collapsible header</p>
     <h1 class="app-h1">Inbox</h1>
     <p class="section-subtitle">Expanded header content sits here and collapses on scroll.</p>
-  </div>
+  </section>
 
-  <div collapsible-content class="ui-demo-page">
-    <section class="section ion-padding">
-      <h2 class="app-h2">Sample content</h2>
-      <div class="stack">
-        <custom-card title="Service request" subtitle="Open">
+  <section class="section ion-padding">
+    <h2 class="app-h2">Sample content</h2>
+    <div class="stack">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Service request</ion-card-title>
+          <ion-card-subtitle>Open</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
           <p class="card-body">Atlassian - Bitbucket access request.</p>
-        </custom-card>
-        <custom-card title="Change request" subtitle="Pending">
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Change request</ion-card-title>
+          <ion-card-subtitle>Pending</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
           <p class="card-body">Deploy approval to staging.</p>
-        </custom-card>
-        <custom-card title="Incident" subtitle="Investigating">
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Incident</ion-card-title>
+          <ion-card-subtitle>Investigating</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
           <p class="card-body">Latency spikes in EU region.</p>
-        </custom-card>
-      </div>
-    </section>
-  </div>
-</custom-collapsible-header>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </section>
+</ion-content>
