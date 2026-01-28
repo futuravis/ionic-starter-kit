@@ -31,3 +31,23 @@
   line-height: 1.5;
   white-space: pre-wrap;
 }
+
+.demo-grid {
+  padding: 0;
+}
+
+.grid-tile {
+  background: rgba(var(--ion-color-primary-rgb), 0.12);
+  border: 1px solid rgba(var(--ion-color-primary-rgb), 0.24);
+  border-radius: 12px;
+  padding: 14px 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--app-text);
+}
+
+.demo-toolbar {
+  --background: var(--app-surface);
+  border: 1px solid var(--app-border);
+  border-radius: 12px;
+}

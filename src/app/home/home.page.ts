@@ -42,9 +42,12 @@ export class HomePage {
   ];
 
   componentGroups: ComponentGroup[] = [
+    { group: 'Layout & Structure', items: ['ion-app', 'ion-page', 'ion-header', 'ion-toolbar', 'ion-title', 'ion-content', 'ion-footer', 'ion-grid', 'ion-row', 'ion-col'] },
+    { group: 'Navigation', items: ['ion-router-outlet', 'ion-nav', 'ion-tabs', 'ion-tab-bar', 'ion-tab-button', 'ion-back-button', 'ion-breadcrumbs', 'ion-breadcrumb'] },
+    { group: 'Menus & Utilities', items: ['ion-menu', 'ion-menu-button', 'ion-menu-toggle', 'ion-reorder-group', 'ion-reorder', 'ion-item-sliding', 'ion-item-options', 'ion-item-option'] },
     { group: 'Buttons & Actions', items: ['ion-button', 'ion-icon', 'ion-fab', 'ion-fab-button', 'ion-fab-list', 'ion-chip', 'ion-ripple-effect'] },
     { group: 'Inputs', items: ['ion-input', 'ion-textarea', 'ion-select', 'ion-searchbar', 'ion-toggle', 'ion-checkbox', 'ion-radio-group', 'ion-radio', 'ion-datetime', 'ion-input-password-toggle', 'ion-segment', 'ion-range'] },
-    { group: 'Lists', items: ['ion-list', 'ion-list-header', 'ion-item', 'ion-item-sliding', 'ion-item-options', 'ion-item-option', 'ion-label', 'ion-note'] },
+    { group: 'Lists', items: ['ion-list', 'ion-list-header', 'ion-item', 'ion-label', 'ion-note'] },
     { group: 'Media & Cards', items: ['ion-card', 'ion-card-header', 'ion-card-title', 'ion-card-subtitle', 'ion-card-content', 'ion-avatar', 'ion-thumbnail', 'ion-text', 'ion-img', 'ion-accordion-group', 'ion-accordion'] },
     { group: 'Overlays', items: ['ion-alert', 'ion-action-sheet', 'ion-modal', 'ion-popover', 'ion-toast', 'ion-loading', 'ion-picker'] },
     { group: 'Feedback & State', items: ['ion-progress-bar', 'ion-spinner', 'ion-skeleton-text', 'ion-refresher', 'ion-refresher-content', 'ion-infinite-scroll', 'ion-infinite-scroll-content'] },

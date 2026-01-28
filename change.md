@@ -39,6 +39,7 @@
 ## v4 (cleanup)
 
 ### Summary
+- Added layout, navigation, and list demos for grid, breadcrumbs, menu toggle, and reorder components.
 - Removed the empty `src/app/shared` directory.
 - Updated docs to remove versioned naming and keep migration guidance current.
 
@@ -46,3 +47,11 @@
 - `README.md`
 - `MIGRATION.md`
 - `change.md`
+- `src/app/ui-layout/ui-layout.page.html`
+- `src/app/ui-layout/ui-layout.page.scss`
+- `src/app/ui-navigation/ui-navigation.page.html`
+- `src/app/ui-navigation/ui-navigation.page.scss`
+- `src/app/ui-lists/ui-lists.page.html`
+- `src/app/ui-lists/ui-lists.page.ts`
+- `src/app/ui-lists/ui-lists.page.scss`
+- `src/app/home/home.page.ts`

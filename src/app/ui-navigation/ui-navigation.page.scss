@@ -31,3 +31,14 @@
   line-height: 1.5;
   white-space: pre-wrap;
 }
+
+.menu-toggle-card {
+  display: grid;
+  gap: 12px;
+}
+
+ion-breadcrumbs {
+  --color: var(--app-text);
+  --color-active: var(--app-text);
+  --color-hover: var(--ion-color-primary);
+}

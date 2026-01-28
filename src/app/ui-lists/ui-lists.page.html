@@ -124,4 +124,22 @@
       </ion-item-sliding>
     </ion-list>
   </section>
+
+  <section class="section ion-padding">
+    <div class="section-head">
+      <h2 class="app-h3">Reorder list</h2>
+      <p class="section-subtitle">Use ion-reorder-group and ion-reorder to reorder list items.</p>
+    </div>
+    <ion-list class="stack">
+      <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($event)">
+        <ion-item *ngFor="let item of reorderItems" lines="full">
+          <ion-label>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.subtitle }}</p>
+          </ion-label>
+          <ion-reorder slot="end"></ion-reorder>
+        </ion-item>
+      </ion-reorder-group>
+    </ion-list>
+  </section>
 </ion-content>
