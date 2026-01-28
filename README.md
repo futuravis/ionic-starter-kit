@@ -1,4 +1,4 @@
-# Ionic Starter Kit (v3)
+# Ionic Starter Kit
 
 This starter kit is an Ionic Angular baseline that uses global design tokens and Ionic components directly.
 

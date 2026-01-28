@@ -1,4 +1,4 @@
-# Migration Guide (v2 -> other Ionic starter kit)
+# Migration Guide (v4 -> other Ionic starter kit)
 
 This repo is an Ionic Angular starter kit with a design system demo. It uses Ionic components directly (no custom wrapper layer) and relies on global tokens in `src/theme/variables.scss` and `src/global.scss`.
 
